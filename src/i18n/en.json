@@ -1,0 +1,76 @@
+{
+    "lang": {
+        "en": "En",
+        "ru": "Ру",
+        "uz": "O'z"
+    },
+    "menu": {
+        "main": "Home",
+        "service": "Service",
+        "advantages": "Advantages",
+        "about": "About",
+        "contacts": "Contacts"
+    },
+    "header": {
+        "title_1": "Instant",
+        "title_2": "delivery ",
+        "title_3": "without borders",
+        "text": "Fast, efficient, without unnecessary hassle. Our company offers express cargo transportation",
+        "circle": "Contact"                
+    },
+    "carousel": {
+        "title_1": "Cargo solutions ",
+        "title_2": "at",
+        "title_3": " the highest level",
+        "text": "It's not just about moving goods across borders, it's about creating secure pathways for your business",
+        "title1": "Airfreight worldwide",
+        "text1": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world",
+        "title2": "Road transportation",
+        "text2": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world",
+        "title3": "Railway transportation of goods",
+        "text3": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world",
+        "title4": "Customs broker service",
+        "text4": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world",
+        "title5": "Training and retraining of foreign trade specialists",
+        "text5": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world",
+        "title6": "international trade",
+        "text6": "It's not just about moving goods across borders, it's about creating secure pathways for your business on the global stage. We offer comprehensive logistics solutions that ensure efficient and safe delivery of goods anywhere in the world"
+    },
+    "underCarousel": {
+        "title_1_1": "Personal",
+        "title_1_2": " approach",
+        "title_2_1": "Global",
+        "title_2_2": " results",
+        "card": {
+            "title1": "We organize all deliveries on a turnkey basis",
+            "text1": "We provide clients with a full range of services related to cargo transportation. We also provide consulting, insurance, support, customs support",
+            "title2": "We offer flexible terms",
+            "text2": "We provide the customer with favorable individual terms of payment for freight transportation. We will consider each delivery route and make adjustments to the payment system in accordance with the volumes and timing of cargo transportation",
+            "title3": "We minimize your risks",
+            "text3": "We use vehicles approved for operation in accordance with the requirements of regulatory legal acts. We employ people who have the appropriate skills and experience in the field of freight transportation",
+            "title4": "We keep in touch at all stages of the transaction",
+            "text4": "Each of our clients is assigned a personal manager who will coordinate the entire transportation process and be in constant contact to promptly resolve any issues"
+        }
+    },
+    "associate": {
+        "title_1_1": "Reliable ",
+        "title_1_2": "partner",
+        "title_2_1": "in global ",
+        "title_2_2": "supplies",
+        "text": "At {RavoWorld}, we're not just about delivering freight—we're creating a guide to your success. Step beyond the boundaries of everyday life with us, where every delivery becomes history.",
+        "card1": "partner countries",
+        "card2": "year of foundation",
+        "card3": "satisfied clients",
+        "card4": "transportations carried out"
+    },
+    "contact": {
+        "title": "Take a step towards us: ",
+        "title_1": "your future is in our hands",
+        "contacts": "Contacts",
+        "address": "Address",
+        "address_map": "100200, Republic of Uzbekistan, Tashkent, st. Magtymguly",
+        "telefon": "Phone",
+        "email": "E-mail",
+        "copy_right": "All rights reserved"
+    }
+}
