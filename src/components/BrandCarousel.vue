@@ -1,55 +1,70 @@
 <template>
   <div
-    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full brand-carousel relative"
+    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[80px] brand-carousel relative"
   >
-    <div class="brands1">
-      <div class="brand" v-for="(brand, index) in 9" :key="brand">
+    <swiper-container
+    class="w-full"
+      :slides-per-view="slidesPerViewRef"
+      :space-between="spaceBetween"
+      :centered-slides="false"
+      :autoplay="{
+        delay: 500,
+      }"
+    >
+      <swiper-slide class="mr-1" v-for="i in 9" :key="i">
         <img
-          @mouseover="activeHoverFn(index, 'over')"
-          @mouseleave="activeHoverFn(index, 'leave')"
-          class="brand-image"
+          @mouseover="activeHoverFn(i, 'over')"
+          @mouseleave="activeHoverFn(i, 'leave')"
+          class="brand-image mr-1"
           :src="
-            activeHover == index
-              ? `/img/brand_${index + 1}.svg`
-              : `/img/brand_${index + 1}_hover.svg`
+            activeHover == i
+              ? `/img/brand_${i}.svg`
+              : `/img/brand_${i}_hover.svg`
           "
         />
-      </div>
-    </div>
-    <div class="brands2">
-      <div class="brand" v-for="(brand, index) in 9" :key="brand">
+      </swiper-slide>
+      <swiper-slide class="mr-1" v-for="i in 9" :key="i">      
         <img
-          @mouseover="activeHoverFn(index, 'over')"
-          @mouseleave="activeHoverFn(index, 'leave')"
-          class="brand-image"
+          @mouseover="activeHoverFn(i, 'over')"
+          @mouseleave="activeHoverFn(i, 'leave')"
+          class="brand-image mr-1"
           :src="
-            activeHover == index
-              ? `/img/brand_${index + 1}.svg`
-              : `/img/brand_${index + 1}_hover.svg`
+            activeHover == i
+              ? `/img/brand_${i}.svg`
+              : `/img/brand_${i}_hover.svg`
           "
         />
-      </div>
-    </div>
-    <div class="brands3">
-      <div class="brand" v-for="(brand, index) in 9" :key="brand">
+      </swiper-slide>
+      <swiper-slide class="mr-1" v-for="i in 9" :key="i">      
         <img
-          @mouseover="activeHoverFn(index, 'over')"
-          @mouseleave="activeHoverFn(index, 'leave')"
-          class="brand-image"
+          @mouseover="activeHoverFn(i, 'over')"
+          @mouseleave="activeHoverFn(i, 'leave')"
+          class="brand-image mr-1"
           :src="
-            activeHover == index
-              ? `/img/brand_${index + 1}.svg`
-              : `/img/brand_${index + 1}_hover.svg`
+            activeHover == i
+              ? `/img/brand_${i}.svg`
+              : `/img/brand_${i}_hover.svg`
           "
         />
-      </div>
-    </div>
+      </swiper-slide>
+    </swiper-container>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { register } from 'swiper/element/bundle';
+import { ref, onMounted, watchEffect, onUnmounted } from "vue";
+register()
 const activeHover = ref(null);
+const slidesPerViewRef = ref(9)
+const screenWidth = ref(window.innerWidth);
+const handleResize = () => {
+  screenWidth.value = window.innerWidth;
+  if (screenWidth.value < 601) {
+    slidesPerViewRef.value = 3
+  } 
+  console.log(screenWidth.value);
+};
 function activeHoverFn(index, type) {
   if (type == "over") {
     activeHover.value = index;
@@ -58,12 +73,27 @@ function activeHoverFn(index, type) {
     activeHover.value = null;
   }
 }
+
+onMounted(() => {
+  handleResize();
+  console.log(screenWidth.value);
+
+  window.addEventListener("resize", handleResize);
+
+  // Cleanup the event listener when the component is unmounted
+  watchEffect(() => {
+    onUnmounted(() => {
+      window.removeEventListener("resize", handleResize);
+    });
+  });
+})
+
+
 </script>
 
 <style scoped>
 .brand-carousel {
   background: transparent;
-  height: 80px;
   justify-content: center;
   display: flex;
   flex-wrap: nowrap;
