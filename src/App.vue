@@ -778,7 +778,7 @@ function openCloseLang() {
         <div
           class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-6 col-span-2 rounded-3xl"
         >
-          <Map v-if="showMap" />        
+          <Map />        
         </div>
       </div>
     </div>
