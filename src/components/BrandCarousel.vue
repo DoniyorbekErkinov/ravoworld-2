@@ -76,11 +76,8 @@ function activeHoverFn(index, type) {
 
 onMounted(() => {
   handleResize();
-  console.log(screenWidth.value);
-
   window.addEventListener("resize", handleResize);
 
-  // Cleanup the event listener when the component is unmounted
   watchEffect(() => {
     onUnmounted(() => {
       window.removeEventListener("resize", handleResize);

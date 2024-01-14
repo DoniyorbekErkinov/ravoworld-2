@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import MapIcon from "./MapIcon.vue";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import L, { icon } from "leaflet";
 
 onMounted(() => {
     // Create the map
@@ -12,8 +12,15 @@ onMounted(() => {
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
+    
+    var customIcon = L.icon({
+        iconUrl: '/img/marker.png', // Adjust the path to your marker image
+        iconSize: [32, 32], // Adjust the size of your marker
+        iconAnchor: [16, 32], // Adjust the anchor point if needed
+        popupAnchor: [0, -32] // Adjust the popup anchor if needed
+    });
 
-    var marker = L.marker([41.35140553722883, 69.28855526466646]).addTo(map);
+    var marker = L.marker([41.35140553722883, 69.28855526466646], {icon: customIcon}).addTo(map);
 
 });
 
