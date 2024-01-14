@@ -233,7 +233,8 @@ function openCloseLang() {
         <div
           class="xxl:h-[152px] xl:h-[152px] lg:h-[152px] md:h-[152px] slg:h-[152px] h-[112px] xxl:w-[152px] xl:w-[152px] lg:w-[152px] md:w-[152px] slg:w-[152px] w-[112px] rounded-full bg-mRed absolute top-[80%] right-[50px] flex justify-center items-center text-mWhite font-normal tracking-wider manrope-font text-xs xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
         >
-          <a href="#contacts" class="">{{ $t("header.circle") }}</a>
+          <a href="#contacts" class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden">{{ $t("header.circle") }}</a>
+          <a href="tel:+998901234567" class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex">{{ $t("header.circle") }}</a>
         </div>
       </div>
       <!-- Under Navbar End -->
