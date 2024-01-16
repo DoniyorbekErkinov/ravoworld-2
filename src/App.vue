@@ -504,10 +504,10 @@ function openCloseLang() {
         >
           <div>
             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_488_1113" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+              <mask id="mask0_488_1113" x="0" y="0" width="56" height="56">
               <path d="M0 3.8147e-06H56V56H0V3.8147e-06Z" class="fill-mWhite group-hover:fill-mRed" />
               </mask>
-              <g mask="url(#mask0_488_1113)">
+              <g>
               <path d="M8.67679 45.6241V4.00466C8.67679 2.25291 10.1092 0.820316 11.8609 0.820316H44.1361C45.8877 0.820316 47.3232 2.25291 47.3232 4.00466V51.9925C47.3232 53.7441 45.8877 55.1797 44.1361 55.1797H11.8609C10.1092 55.1797 8.67679 53.7441 8.67679 51.9925V49.3384" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M43.6058 11.436V51.4622H12.3911V4.53471H20.5668M35.43 4.53471H43.6058V7.72178" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M20.5668 0.820251H35.43V4.53473C35.43 6.57786 33.7591 8.25195 31.7158 8.25195H24.2842C22.2379 8.25195 20.5668 6.57786 20.5668 4.53473V0.820251Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
