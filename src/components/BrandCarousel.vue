@@ -1,9 +1,13 @@
 <template>
   <div
-    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[80px] brand-carousel relative"
+    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[200px] brand-carousel relative flex flex-col justify-between"
   >
+  <div class="w-full mb-[80px]">
+    <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mWhite">{{$t('brand_title_1')}}</span> 
+    <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mRed">{{$t('brand_title_2')}}</span> 
+  </div>
     <swiper-container
-    class="w-full"
+    class="w-full h-[80px]"
       :slides-per-view="slidesPerViewRef"
       :space-between="spaceBetween"
       :centered-slides="false"
