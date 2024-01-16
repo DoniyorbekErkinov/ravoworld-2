@@ -289,14 +289,14 @@ function openCloseLang() {
         class="slider-container w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] relative xxl:mt-[103px] xl:mt-[103px] lg:mt-[103px] md:mt-[103px] mt-[34px]"
       >
         <div
-          class="slider w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] xxl:flex xl:flex lg:flex md:flex slg:flex"
-          :style="{ transform: `translateX(-${currentItem * 100}%)` }"
+          class="slider w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] xxl:flex xl:flex lg:flex md:flex slg:flex "
+          :style="{ transform: `translateX(-${currentItem * 100}%)`}"
           v-if="carouselData.length > 0"
         >
           <div
             v-for="(item, index) in carouselData"
             :key="index"
-            class="slider-item h-full w-full relative"
+            class="slider-item h-full w-full relative pr-4"
           >
             <div
               class="w-full xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex flex-col-reverse box-border h-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
@@ -305,7 +305,7 @@ function openCloseLang() {
                 class="xxl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] slg:w-[50%] w-full flex justify-start xxl:mt-[114px] xl:mt-[114px] lg:mt-[114px] md:mt-[114px] mt-[32px]"
               >
                 <div
-                  class="xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full"
+                  class="xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full" 
                 >
                   <h2
                     class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] manrope-font xxl:font-semibold xl:font-semibold lg:font-semibold md:font-semibold slg:font-semibold font-bold"
@@ -325,7 +325,7 @@ function openCloseLang() {
                 <img
                   :src="item?.img"
                   alt="item.image"
-                  class="rounded-3xl h-full w-full"
+                  class="rounded-3xl h-full w-full pr-2 mr-4"
                 />
               </div>
             </div>
