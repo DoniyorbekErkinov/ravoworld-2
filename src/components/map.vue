@@ -1,6 +1,5 @@
 <script setup>
 import { onMounted, ref } from "vue";
-import MapIcon from "./MapIcon.vue";
 import "leaflet/dist/leaflet.css";
 import L, { icon } from "leaflet";
 

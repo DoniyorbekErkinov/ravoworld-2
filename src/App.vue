@@ -75,6 +75,8 @@ const isSideBarOpen = ref(false);
 const isLangOpen = ref(false);
 function openCloseSidebar() {
   isSideBarOpen.value = !isSideBarOpen.value;
+  document.body.classList.toggle('no-scroll', isSideBarOpen.value);
+
 }
 function openCloseLang() {
   isLangOpen.value = !isLangOpen.value;
@@ -86,7 +88,7 @@ function openCloseLang() {
 </script>
 <template>
   <div class="h-full flex flex-col scrollbarActive overflow-hidden relative">
-    <div id="main" class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] mx-auto">
+    <div id="main" class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] md:w-[1300px] w-full mx-auto">
       <!-- Navbar Start -->
       <div
         class="w-full py-8 xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 flex justify-between items-center"
@@ -134,7 +136,7 @@ function openCloseLang() {
               >
             </li>
           </ul>
-          <div class="flex justify-start items-center w-[40%]">
+          <div class="flex justify-start items-center w-[60%]">
             <div
               class="text-xl font-light font-mono ml-[72px] flex items-center relative"
               @click="openCloseLang"
@@ -192,7 +194,7 @@ function openCloseLang() {
                 />
               </svg>
               <span class="text-base font-normal manrope-font"
-                >+998 90 123 45 67</span
+                >+998 97 999 15 30</span
               >
             </div>
             <burger
@@ -234,7 +236,7 @@ function openCloseLang() {
           class="xxl:h-[152px] xl:h-[152px] lg:h-[152px] md:h-[152px] slg:h-[152px] h-[112px] xxl:w-[152px] xl:w-[152px] lg:w-[152px] md:w-[152px] slg:w-[152px] w-[112px] rounded-full bg-mRed absolute top-[80%] right-[50px] flex justify-center items-center text-mWhite font-normal tracking-wider manrope-font text-xs xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
         >
           <a href="#contacts" class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden">{{ $t("header.circle") }}</a>
-          <a href="tel:+998901234567" class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex">{{ $t("header.circle") }}</a>
+          <a href="tel:+998979991530" class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex">{{ $t("header.circle") }}</a>
         </div>
       </div>
       <!-- Under Navbar End -->
@@ -737,7 +739,7 @@ function openCloseLang() {
               >
               <span
                 class="font-normal mt-2 manrope-font text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
-                >+998 (90) 123 45 67</span
+                >+998 (97) 999 15 30</span
               >
             </div>
           </div>
@@ -776,7 +778,7 @@ function openCloseLang() {
           </div>
         </div>
         <div
-          class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-6 col-span-2 rounded-3xl"
+          class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] w-full xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-6 col-span-2 rounded-3xl"
         >
           <Map />        
         </div>
@@ -894,7 +896,7 @@ function openCloseLang() {
     <!-- Sidebar Start -->
     <div
       v-if="isSideBarOpen"
-      class="bg-2Black absolute left-0 top-0 w-screen h-screen flex flex-col p-8"
+      class="bg-2Black fixed left-0 top-0 w-screen h-screen flex flex-col p-8"
     >
       <div class="w-full flex justify-end">
         <cross @click="openCloseSidebar" />
@@ -945,7 +947,7 @@ function openCloseLang() {
       </div>
       <div class="w-full flex justify-center items-center mt-20">
         <phone /><span class="text-2xl text-mWhite manrope-font"
-          >+998 90 123 45 67</span
+          >+998 97 999 15 30</span
         >
       </div>
       <div class="flex justify-center mt-24">
@@ -1048,5 +1050,7 @@ body {
   padding: 10px;
   border-radius: 50%;
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 </style>
