@@ -5,12 +5,12 @@ import L, { icon } from "leaflet";
 
 onMounted(() => {
     // Create the map
-    var map = L.map('map').setView([41.35140553722883, 69.28855526466646], 17);
+    var map2 = L.map('map2').setView([41.35140553722883, 69.28855526466646], 17);
 
     // Add the tile layer
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
-    }).addTo(map);
+    }).addTo(map2);
     
     var customIcon = L.icon({
         iconUrl: '/img/marker.png', // Adjust the path to your marker image
@@ -19,7 +19,7 @@ onMounted(() => {
         popupAnchor: [0, -32] // Adjust the popup anchor if needed
     });
 
-    var marker = L.marker([41.35140553722883, 69.28855526466646], {icon: customIcon}).addTo(map);
+    var marker = L.marker([41.35140553722883, 69.28855526466646], {icon: customIcon}).addTo(map2);
 
 });
 
@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] rounded-3xl " id="map"></div>
+    <div class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] rounded-3xl " id="map2"></div>
 </template>
 
 <style scoped>

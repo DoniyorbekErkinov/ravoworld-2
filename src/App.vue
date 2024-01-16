@@ -3,6 +3,7 @@ import { ref, onMounted, watch } from "vue";
 import { useHelper } from './composible'
 import { useI18n } from "vue-i18n";
 import Map from './components/map.vue'
+import Map2 from './components/map2.vue'
 import handGlobe from "./components/handGlobe.vue";
 import warning from "./components/warning.vue";
 import headphones from "./components/headphones.vue";
@@ -672,8 +673,13 @@ function openCloseLang() {
         </div>
       </div>
       <div
-        class="w-full xxl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[500px] slg:h-[500px] h-[1050px] xxl:grid xl:grid lg:grid md:grid slg:grid flex-col grid-cols-3 gap-6 mt-14 py-8"
+        class="w-full xxl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[500px] slg:h-[500px] h-[1050px] xxl:grid xl:grid lg:grid md:grid slg:grid flex flex-col grid-cols-3 gap-6 xxl:mt-14 xl:mt-14 lg:mt-14 md:mt-14 mt-12 py-8"
       >
+        <div
+          class="h-[507px] mb-6 w-full xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block rounded-3xl"
+        >
+          <Map class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block"/>        
+        </div>
         <div
           class="border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
         >
@@ -776,11 +782,11 @@ function openCloseLang() {
               >
             </div>
           </div>
-        </div>
+        </div>      
         <div
-          class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] w-full xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-6 col-span-2 rounded-3xl"
+          class="h-full w-full  col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
         >
-          <Map />        
+          <Map2 />        
         </div>
       </div>
     </div>
@@ -890,7 +896,7 @@ function openCloseLang() {
         class="xxl:text-right xl:text-right lg:text-right md:text-right slg:text-right w-1/2 text-center xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-8 manrope-font"
       >
         <span class="text-mWhite opacity-20">designed by</span>
-        <span class="text-mWhite opacity-40">Nextmark</span>
+        <span class="text-mWhite opacity-40"> Nextmark</span>
       </span>
     </div>
     <!-- Sidebar Start -->
