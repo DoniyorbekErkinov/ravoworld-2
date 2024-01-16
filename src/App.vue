@@ -103,35 +103,35 @@ function openCloseLang() {
           <ul class="xxl:flex xl:flex lg:flex hidden justify-between w-[60%]">
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed font-normal text-base rf-dewi-font"
+                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
                 href="#main"
                 >{{ $t("menu.main") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed font-normal text-base rf-dewi-font"
+                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
                 href="#service"
                 >{{ $t("menu.service") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed font-normal text-base rf-dewi-font"
+                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
                 href="#advantages"
                 >{{ $t("menu.advantages") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed font-normal text-base rf-dewi-font"
+                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
                 href="#about"
                 >{{ $t("menu.about") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed font-normal text-base rf-dewi-font"
+                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
                 href="#contacts"
                 >{{ $t("menu.contacts") }}</a
               >
@@ -139,12 +139,12 @@ function openCloseLang() {
           </ul>
           <div class="flex justify-start items-center w-[60%]">
             <div
-              class="text-xl font-light font-mono ml-[72px] flex items-center relative"
+              class="text-xl ml-[72px] flex items-center relative"
               @click="openCloseLang"
             >
               <span
                 :class="isLangOpen ? 'text-mRed' : 'text-mGray'"
-                class="capitalize font-light text-base rf-dewi-font"
+                class="capitalize text-base rf-dewi-font-light"
                 >{{ $t(`lang.${locale}`) }}</span
               >
               <arrow
@@ -158,19 +158,19 @@ function openCloseLang() {
               <div v-if="isLangOpen" class="absolute text-mWhite top-8">
                 <div
                   @click="locale = 'ru'"
-                  class="border-none text-mGray hover:text-mRed mt-1 font-normal text-base cursor-pointer rf-dewi-font"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
                 >
                   {{ $t("lang.ru") }}
                 </div>
                 <div
                   @click="locale = 'en'"
-                  class="border-none text-mGray hover:text-mRed mt-1 font-normal text-base cursor-pointer rf-dewi-font"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
                 >
                   {{ $t("lang.en") }}
                 </div>
                 <div
                   @click="locale = 'uz'"
-                  class="border-none text-mGray hover:text-mRed mt-1 font-normal text-base cursor-pointer rf-dewi-font"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
                 >
                   {{ $t("lang.uz") }}
                 </div>
@@ -194,7 +194,7 @@ function openCloseLang() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span class="text-base font-normal manrope-font"
+              <span class="text-base manrope-font-normal"
                 >+998 97 999 15 30</span
               >
             </div>
@@ -203,7 +203,7 @@ function openCloseLang() {
               class="xxl:hidden xl:hidden flex"
             ></burger>
           </div>
-        </div>
+        </div>       
       </div>
       <!-- Navbar End -->
       <!-- Under Navbar Start -->
@@ -213,13 +213,13 @@ function openCloseLang() {
         <div
           class="flex flex-col xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-[32px] xxl:text-[56px] xl:text-[56px] lg:text-[56px] md:text-[56px] slg:text-[56px]"
         >
-          <span class="text-mWhite font-semibold rf-dewi-font">{{
+          <span class="text-mWhite rf-dewi-font-semibold">{{
             $t("header.title_1")
           }}</span>
           <div>
-            <span class="text-mRed font-semibold rf-dewi-font"
+            <span class="text-mRed rf-dewi-font-semibold"
               >{{ $t("header.title_2") }} </span
-            ><span class="text-mWhite font-semibold rf-dewi-font">{{
+            ><span class="text-mWhite rf-dewi-font-semibold">{{
               $t("header.title_3")
             }}</span>
           </div>
@@ -228,13 +228,13 @@ function openCloseLang() {
           class="flex justify-center items-center pt-6 xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 px-6"
         >
           <div
-            class="text-2Gray xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full flex justify-end text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base font-normal leading-6 manrope-font"
+            class="text-2Gray xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full flex justify-end text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base leading-6 manrope-font-normal"
           >
             {{ $t("header.text") }}
           </div>
         </div>
         <div
-          class="xxl:h-[152px] xl:h-[152px] lg:h-[152px] md:h-[152px] slg:h-[152px] h-[112px] xxl:w-[152px] xl:w-[152px] lg:w-[152px] md:w-[152px] slg:w-[152px] w-[112px] rounded-full bg-mRed absolute top-[80%] right-[50px] flex justify-center items-center text-mWhite font-normal tracking-wider manrope-font text-xs xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+          class="xxl:h-[152px] xl:h-[152px] lg:h-[152px] md:h-[152px] slg:h-[152px] h-[112px] xxl:w-[152px] xl:w-[152px] lg:w-[152px] md:w-[152px] slg:w-[152px] w-[112px] rounded-full bg-mRed absolute top-[80%] right-[50px] flex justify-center items-center text-mWhite tracking-wider manrope-font-normal text-xs xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
         >
           <a href="#contacts" class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden">{{ $t("header.circle") }}</a>
           <a href="tel:+998979991530" class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex">{{ $t("header.circle") }}</a>
@@ -264,12 +264,12 @@ function openCloseLang() {
         <div
           class="flex flex-col text-[24px] xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
         >
-          <span class="text-mWhite font-semibold tracking-wider rf-dewi-font"
+          <span class="text-mWhite tracking-wider rf-dewi-font-semibold"
             >{{ $t("carousel.title_1") }}
           </span>
-          <div class="text-mWhite font-semibold tracking-wider rf-dewi-font">
+          <div class="text-mWhite tracking-wider rf-dewi-font-semibold">
             {{ $t("carousel.title_2") }}
-            <span class="text-mRed font-semibold tracking-wider rf-dewi-font">{{
+            <span class="text-mRed tracking-wider rf-dewi-font-semibold">{{
               $t("carousel.title_3")
             }}</span>
           </div>
@@ -278,7 +278,7 @@ function openCloseLang() {
           class="flex justify-end items-center xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-2Gray"
         >
           <div
-            class="xxl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[60%] slg:w-[60%] w-full text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base font-normal xxl:ml-14 xl:ml-14 lg:ml-14 ml-0 xxl:mt-0 xl:mt-0 lg:mt-0 mt-4 manrope-font"
+            class="xxl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[60%] slg:w-[60%] w-full text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base  xxl:ml-14 xl:ml-14 lg:ml-14 ml-0 xxl:mt-0 xl:mt-0 lg:mt-0 mt-4 manrope-font-normal"
           >
             {{ $t("carousel.text") }}
           </div>
@@ -309,12 +309,12 @@ function openCloseLang() {
                   class="xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full" 
                 >
                   <h2
-                    class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] manrope-font xxl:font-semibold xl:font-semibold lg:font-semibold md:font-semibold slg:font-semibold font-bold"
+                    class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] xxl:manrope-font-semibold xl:manrope-font-semibold lg:manrope-font-semibold md:manrope-font-semibold slg:manrope-font-semibold manrope-font-bold"
                   >
                     {{ $t(`${item?.title}`) }}
                   </h2>
                   <p
-                    class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font font-normal xxl:mt-8 xl:mt-8 lg:mt-8 md:mt-8 slg:mt-8 mt-4"
+                    class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font-normal xxl:mt-8 xl:mt-8 lg:mt-8 md:mt-8 slg:mt-8 mt-4"
                   >
                     {{ $t(`${item?.text}`) }}
                   </p>
@@ -356,11 +356,11 @@ function openCloseLang() {
           </div>
           <div class="ml-4">
             <span
-              class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[16px] manrope-font"
+              class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[16px] manrope-font-normal"
               >{{ currentItem + 1 }} /</span
             >
             <span
-              class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font ml-1"
+              class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font-normal ml-1"
               >{{ carouselData.length }}</span
             >
           </div>
@@ -409,11 +409,11 @@ function openCloseLang() {
         </div>
         <div class="ml-4">
           <span
-            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[16px] manrope-font"
+            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[16px] manrope-font-normal"
             >{{ currentItem + 1 }} /</span
           >
           <span
-            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font"
+            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] manrope-font-normal"
             >{{ carouselData.length }}</span
           >
         </div>
@@ -446,18 +446,18 @@ function openCloseLang() {
       class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px]"
     >
       <div
-        class="xxl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] slg:w-[70%] w-full mx-auto flex flex-col items-center font-bold"
+        class="xxl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] slg:w-[70%] w-full mx-auto flex flex-col items-center"
       >
         <div class="flex justify-end items-center w-full">
           <div
             class="xxl:w-[75%] xl:w-[75%] lg:w-[75%] md:w-[75%] slg:w-[75%] w-full flex xxl:justify-end xl:justify-end lg:justify-end md:justify-end slg:justify-end justify-center mx-auto"
           >
             <span
-              class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider font-bold"
+              class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider rf-dewi-font-bold"
               >{{ $t("underCarousel.title_1_1") }}
             </span>
             <span
-              class="text-mRed xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider ml-4 font-bold"
+              class="text-mRed xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider ml-4 rf-dewi-font-bold"
             >
               {{ $t("underCarousel.title_1_2") }}</span
             >
@@ -468,11 +468,11 @@ function openCloseLang() {
             class="xxl:w-[75%] xl:w-[75%] lg:w-[75%] md:w-[75%] slg:w-[75%] w-full flex xxl:justify-start xl:justify-start lg:justify-start md:justify-start slg:justify-start justify-center mx-auto"
           >
             <span
-              class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider font-bold"
+              class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider rf-dewi-font-bold"
               >{{ $t("underCarousel.title_2_1") }}
             </span>
             <span
-              class="text-mRed xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider ml-4 font-bold"
+              class="text-mRed xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] tracking-wider ml-4 rf-dewi-font-bold"
             >
               {{ $t("underCarousel.title_2_2") }}</span
             >
@@ -489,12 +489,12 @@ function openCloseLang() {
             <handGlobe class="group-hover:fill-mRed fill-mWhite" />
           </div>
           <div
-            class="text-mWhite font-semibold xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font w-full"
+            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font-semibold w-full"
           >
             {{ $t("underCarousel.card.title1") }}
           </div>
           <div
-            class="text-mGray font-normal xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font"
+            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font-normal"
           >
             {{ $t("underCarousel.card.text1") }}
           </div>
@@ -525,12 +525,12 @@ function openCloseLang() {
               </svg>
           </div>
           <div
-            class="text-mWhite font-semibold xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font w-full"
+            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font-semibold w-full"
           >
             {{ $t("underCarousel.card.title2") }}
           </div>
           <div
-            class="text-mGray font-normal xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font"
+            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font-normal"
           >
             {{ $t("underCarousel.card.text2") }}
           </div>
@@ -548,12 +548,12 @@ function openCloseLang() {
             <warning class="group-hover:fill-mRed fill-mWhite" />
           </div>
           <div
-            class="text-mWhite font-semibold xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font w-full"
+            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font-semibold w-full"
           >
             {{ $t("underCarousel.card.title3") }}
           </div>
           <div
-            class="text-mGray font-normal xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font"
+            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font-normal"
           >
             {{ $t("underCarousel.card.text3") }}
           </div>
@@ -565,12 +565,12 @@ function openCloseLang() {
             <headphones class="group-hover:fill-mRed fill-mWhite" />
           </div>
           <div
-            class="text-mWhite font-semibold xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font w-full"
+            class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font-semibold w-full"
           >
             {{ $t("underCarousel.card.title4") }}
           </div>
           <div
-            class="text-mGray font-normal xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font"
+            class="text-mGray xxl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] slg:text-[16px] text-[14px] mt-4 w-full manrope-font-normal"
           >
             {{ $t("underCarousel.card.text4") }}
           </div>
@@ -587,27 +587,27 @@ function openCloseLang() {
         class="xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full flex flex-col justify-between"
       >
         <div
-          class="text-mWhite flex flex-col tracking-wider font-semibold xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 p-0 rf-dewi-font"
+          class="text-mWhite flex flex-col tracking-wider xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 p-0 rf-dewi-font-semibold"
         >
           <div>
-            <span class="text-mRed font-bold">{{
+            <span class="text-mRed ">{{
               $t("associate.title_1_1")
             }}</span
-            ><span class="font-bold text-mWhite">
+            ><span class=" text-mWhite">
               {{ $t("associate.title_1_2") }}
             </span>
           </div>
           <div>
-            <span class="font-bold">{{ $t("associate.title_2_1") }}</span
+            <span class="">{{ $t("associate.title_2_1") }}</span
             ><span
-              class="text-mRed font-bold text-red-700 text-[40px] leading-[52px]"
+              class="text-mRed  text-red-700 text-[40px] leading-[52px]"
             >
               {{ $t("associate.title_2_2") }}
             </span>
           </div>
         </div>
         <div
-          class="text-mWhite xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 py-8 manrope-font"
+          class="text-mWhite xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 py-8 manrope-font-normal"
         >
           <span
             v-html="
@@ -615,7 +615,7 @@ function openCloseLang() {
                 RavoWorld: `<span class=&quot;text-mRed&quot;>RavoWorld</span>`,
               })
             "
-            class="text-base font-normal"
+            class="text-base"
           >
           </span>
         </div>
@@ -626,32 +626,32 @@ function openCloseLang() {
         <div
           class="border border-2Gray bg-2Black rounded-2xl flex flex-col justify-between items-start p-8 text-mWhite xxl:h-[320px] xl:h-[320px] lg:h-[320px] md:h-[320px] slg:h-[320px] h-[338px]"
         >
-          <div class="font-bold text-5xl rf-dewi-font">{{ count1 }}</div>
-          <div class="tracking-wider text-base manrope-font">
+          <div class="text-5xl rf-dewi-font-bold">{{ count1 }}</div>
+          <div class="tracking-wider text-base manrope-font-normal">
             {{ $t("associate.card1") }}
           </div>
         </div>
         <div
           class="border border-2Gray bg-2Black rounded-2xl flex flex-col justify-between items-start p-8 text-mWhite xxl:h-[320px] xl:h-[320px] lg:h-[320px] md:h-[320px] slg:h-[320px] h-[338px]"
         >
-          <div class="font-bold text-5xl rf-dewi-font">{{ count2 }}</div>
-          <div class="tracking-wider text-base manrope-font">
+          <div class="text-5xl rf-dewi-font-bold">{{ count2 }}</div>
+          <div class="tracking-wider text-base manrope-font-normal">
             {{ $t("associate.card2") }}
           </div>
         </div>
         <div
           class="border border-2Gray bg-2Black rounded-2xl flex flex-col justify-between items-start p-8 text-mWhite xxl:h-[320px] xl:h-[320px] lg:h-[320px] md:h-[320px] slg:h-[320px] h-[338px]"
         >
-          <div class="font-bold text-5xl rf-dewi-font">{{ count3 }}</div>
-          <div class="tracking-wider text-base manrope-font">
+          <div class="text-5xl rf-dewi-font-bold">{{ count3 }}</div>
+          <div class="tracking-wider text-base manrope-font-normal">
             {{ $t("associate.card3") }}
           </div>
         </div>
         <div
           class="border border-2Gray bg-2Black rounded-2xl flex flex-col justify-between items-start p-8 text-mWhite xxl:h-[320px] xl:h-[320px] lg:h-[320px] md:h-[320px] slg:h-[320px] h-[338px]"
         >
-          <div class="font-bold text-5xl rf-dewi-font">{{ count4 }}+</div>
-          <div class="tracking-wider text-base manrope-font">
+          <div class="text-5xl rf-dewi-font-bold">{{ count4 }}+</div>
+          <div class="tracking-wider text-base manrope-font-normal">
             {{ $t("associate.card4") }}
           </div>
         </div>
@@ -666,7 +666,7 @@ function openCloseLang() {
       <BrandCarousel class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"/>
       <div class="w-full">
         <div
-          class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] font-medium flex flex-col tracking-wider rf-dewi-font"
+          class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] flex flex-col tracking-wider rf-dewi-font-medium"
         >
           <span>{{ $t("contact.title") }}</span>
           <span>{{ $t("contact.title_1") }}</span>
@@ -684,7 +684,7 @@ function openCloseLang() {
           class="border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
         >
           <h2
-            class="text-4xl text-mWhite rf-dewi-font text-[20px] xxl:text-[32px] xl:text-[32px] lg:text-[32px] md:text-[32px] slg:text-[32px] font-semibold"
+            class="text-4xl text-mWhite rf-dewi-font-semibold text-[20px] xxl:text-[32px] xl:text-[32px] lg:text-[32px] md:text-[32px] slg:text-[32px]"
           >
             {{ $t("contact.contacts") }}
           </h2>
@@ -712,11 +712,11 @@ function openCloseLang() {
             </svg>
             <div class="flex flex-col ml-4">
               <span
-                class="font-semibold manrope-font text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
+                class="manrope-font-semibold text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
                 >{{ $t("contact.address") }}</span
               >
               <div
-                class="font-normal mt-2 manrope-font text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
               >
                 {{ $t("contact.address_map") }}
               </div>
@@ -740,11 +740,11 @@ function openCloseLang() {
             </svg>
             <div class="flex flex-col ml-4">
               <span
-                class="font-semibold manrope-font text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
+                class="manrope-font-semibold text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
                 >{{ $t("contact.telefon") }}</span
               >
               <span
-                class="font-normal mt-2 manrope-font text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
                 >+998 (97) 999 15 30</span
               >
             </div>
@@ -773,11 +773,11 @@ function openCloseLang() {
             </svg>
             <div class="flex flex-col ml-4">
               <span
-                class="font-semibold manrope-font text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
+                class="manrope-font-semibold text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
                 >{{ $t("contact.email") }}</span
               >
               <span
-                class="font-normal mt-2 manrope-font text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
                 >info@ravoworld.com</span
               >
             </div>
@@ -813,7 +813,7 @@ function openCloseLang() {
               class="hover:text-mRed underline-hover cursor-pointer xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-4"
             >
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#main"
                 >{{ $t("menu.main") }}</a
               >
@@ -822,7 +822,7 @@ function openCloseLang() {
               class="hover:text-mRed underline-hover cursor-pointer xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-4"
             >
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#service"
                 >{{ $t("menu.service") }}</a
               >
@@ -831,7 +831,7 @@ function openCloseLang() {
               class="hover:text-mRed underline-hover cursor-pointer xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-4"
             >
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#advantages"
                 >{{ $t("menu.advantages") }}</a
               >
@@ -840,7 +840,7 @@ function openCloseLang() {
               class="hover:text-mRed underline-hover cursor-pointer xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-4"
             >
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#about"
                 >{{ $t("menu.about") }}</a
               >
@@ -849,7 +849,7 @@ function openCloseLang() {
               class="hover:text-mRed underline-hover cursor-pointer xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 slg:mt-0 mt-4"
             >
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#contacts"
                 >{{ $t("menu.contacts") }}</a
               >
@@ -889,14 +889,14 @@ function openCloseLang() {
       class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col mx-auto flex justify-between items-center my-6"
     >
       <span
-        class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left w-1/2 text-center manrope-font text-mWhite opacity-20"
+        class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left w-1/2 text-center manrope-font-normal text-mWhite opacity-20"
         >©2020-2023 RavoWorld. {{ $t("contact.copy_right") }}</span
       >
       <span
-        class="xxl:text-right xl:text-right lg:text-right md:text-right slg:text-right w-1/2 text-center xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-8 manrope-font"
+        class="xxl:text-right xl:text-right lg:text-right md:text-right slg:text-right w-1/2 text-center xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-8 manrope-font-normal"
       >
-        <span class="text-mWhite opacity-20">designed by</span>
-        <span class="text-mWhite opacity-40"> Nextmark</span>
+        <span class="text-mWhite opacity-20 manrope-font-normal">designed by</span>
+        <span class="text-mWhite opacity-40 manrope-font-normal"> Nextmark</span>
       </span>
     </div>
     <!-- Sidebar Start -->
@@ -911,7 +911,7 @@ function openCloseLang() {
         <ul class="flex justify-between w-full flex-col items-center">
           <li class="underline-hover cursor-pointer mt-8">
             <a
-              class="text-mWhite hover:text-mRed text-xl manrope-font"
+              class="text-mWhite hover:text-mRed text-xl manrope-font-normal"
               @click="openCloseSidebar"
               href="#main"
               >{{ $t("menu.main") }}</a
@@ -919,7 +919,7 @@ function openCloseLang() {
           </li>
           <li class="underline-hover cursor-pointer mt-8">
             <a
-              class="text-mWhite hover:text-mRed text-xl manrope-font"
+              class="text-mWhite hover:text-mRed text-xl manrope-font-normal"
               @click="openCloseSidebar"
               href="#service"
               >{{ $t("menu.service") }}</a
@@ -927,7 +927,7 @@ function openCloseLang() {
           </li>
           <li class="underline-hover cursor-pointer mt-8">
             <a
-              class="text-mWhite hover:text-mRed text-xl manrope-font"
+              class="text-mWhite hover:text-mRed text-xl manrope-font-normal"
               @click="openCloseSidebar"
               href="#advantages"
               >{{ $t("menu.advantages") }}</a
@@ -935,7 +935,7 @@ function openCloseLang() {
           </li>
           <li class="underline-hover cursor-pointer mt-8">
             <a
-              class="text-mWhite hover:text-mRed text-xl manrope-font"
+              class="text-mWhite hover:text-mRed text-xl manrope-font-normal"
               @click="openCloseSidebar"
               href="#about"
               >{{ $t("menu.about") }}</a
@@ -943,7 +943,7 @@ function openCloseLang() {
           </li>
           <li class="underline-hover cursor-pointer mt-8">
             <a
-              class="text-mWhite hover:text-mRed text-xl manrope-font"
+              class="text-mWhite hover:text-mRed text-xl manrope-font-normal"
               @click="openCloseSidebar"
               href="#contacts"
               >{{ $t("menu.contacts") }}</a
@@ -952,40 +952,21 @@ function openCloseLang() {
         </ul>
       </div>
       <div class="w-full flex justify-center items-center mt-20">
-        <phone /><span class="text-2xl text-mWhite manrope-font"
+        <phone /><span class="text-2xl text-mWhite manrope-font-normal"
           >+998 97 999 15 30</span
         >
       </div>
       <div class="flex justify-center mt-24">
-        <span class="text-xl manrope-font text-mGray opacity-30"
+        <span class="text-xl manrope-font-normal text-mGray opacity-30"
           >designed by</span
         >
-        <span class="text-xl manrope-font text-mGray ml-2">Nextmark</span>
+        <span class="text-xl manrope-font-normal text-mGray ml-2">Nextmark</span>
       </div>
     </div>
     <!-- Sidebar Start -->
   </div>
 </template>
 <style>
-/* Import the RF Dewi font family */
-
-/* Import the Manrope font family */
-@font-face {
-  font-family: "Manrope";
-  src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Apply RF Dewi font to elements with the rf-dewi-font class */
-.rf-dewi-font {
-  font-family: "RF Dewi", sans-serif;
-}
-
-/* Apply Manrope font to elements with the manrope-font class */
-.manrope-font {
-  font-family: "Manrope", sans-serif;
-}
 
 body {
   background-color: #0b1117;
