@@ -36,31 +36,31 @@ html {
 
 @font-face {
   font-family: 'RF Dewi Light';
-  src: url('src/fonts/RFDewiExpanded-Light.ttf') format('truetype'),
-    url('src/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
-       url('src/fonts/RFDewiExpanded-Black.woff') format('woff');
+  src: url('/public/fonts/RFDewiExpanded-Light.ttf') format('truetype'),
+    url('/public/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
+       url('/public/fonts/RFDewiExpanded-Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'RF Dewi Regular';
-  src: url('src/fonts/RFDewiExpanded-Regular.ttf') format('truetype'),
-    url('src/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
-       url('src/fonts/RFDewiExpanded-Black.woff') format('woff');
+  src: url('/public/fonts/RFDewiExpanded-Regular.ttf') format('truetype'),
+    url('/public/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
+       url('/public/fonts/RFDewiExpanded-Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'RF Dewi Semibold';
-  src: url('src/fonts/RFDewiExpanded-Semibold.ttf') format('truetype'),
-       url('src/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
-       url('src/fonts/RFDewiExpanded-Black.woff') format('woff');
+  src: url('/public/fonts/RFDewiExpanded-Semibold.ttf') format('truetype'),
+       url('/public/fonts/RFDewiExpanded-Black.woff2') format('woff2'),
+       url('/public/fonts/RFDewiExpanded-Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 } 
 @font-face {
   font-family: 'RF Dewi Bold';
-  src: url('src/fonts/RFDewiExtended-Bold.ttf') format('truetype');
+  src: url('/public/fonts/RFDewiExtended-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
