@@ -177,7 +177,7 @@ function openCloseLang() {
               </div>
             </div>
             <div
-              class="xxl:flex xl:flex lg:flex hidden text-mWhite justify-between group hover:text-mRed items-center ml-10"
+              class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden text-mWhite justify-between group hover:text-mRed items-center ml-10"
             >
               <svg
                 class="mr-4 stroke-mWhite group-hover:stroke-mRed"
@@ -200,7 +200,7 @@ function openCloseLang() {
             </div>
             <burger
               @click="openCloseSidebar"
-              class="xxl:hidden xl:hidden flex"
+              class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex"
             ></burger>
           </div>
         </div>       
