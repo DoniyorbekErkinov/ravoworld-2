@@ -1,9 +1,9 @@
 <script setup>
 import { ref, onMounted, watch } from "vue";
-import { useHelper } from './composible'
+import { useHelper } from "./composible";
 import { useI18n } from "vue-i18n";
-import Map  from './components/map.vue'
-import Map2 from './components/map2.vue'
+// import Map from "./components/map.vue";
+// import Map2 from "./components/map2.vue";
 import handGlobe from "./components/handGlobe.vue";
 import warning from "./components/warning.vue";
 import headphones from "./components/headphones.vue";
@@ -12,8 +12,8 @@ import burger from "./components/burger.vue";
 import cross from "./components/cross.vue";
 import phone from "./components/phone.vue";
 import arrow from "./components/arrow.vue";
-const BrandCarousel = () => import("./components/BrandCarousel.vue")
-const {carouselData} = useHelper()
+const BrandCarousel = () => import("./components/BrandCarousel.vue");
+const { carouselData } = useHelper();
 const { locale, t } = useI18n();
 const currentItem = ref(1);
 const count1 = ref(0);
@@ -25,14 +25,15 @@ function next() {
 }
 function prev() {
   currentItem.value =
-    (currentItem.value - 1 + carouselData.value.length) % carouselData.value.length;
+    (currentItem.value - 1 + carouselData.value.length) %
+    carouselData.value.length;
 }
 watch(locale, (newVal, oldVal) => {
   localStorage.setItem("locale", newVal);
-  currentItem.value = 1
+  currentItem.value = 1;
 });
 onMounted(() => {
-  let carouselInterval = setInterval(() => {  
+  let carouselInterval = setInterval(() => {
     if (window.pageYOffset > 200 && window.pageYOffset < 2500) {
       next();
     } else {
@@ -69,82 +70,79 @@ onMounted(() => {
     }
   });
 
-  showMap.value = true
+  showMap.value = true;
 });
 
 const isSideBarOpen = ref(false);
 const isLangOpen = ref(false);
 function openCloseSidebar() {
   isSideBarOpen.value = !isSideBarOpen.value;
-  document.body.classList.toggle('no-scroll', isSideBarOpen.value);
-
+  document.body.classList.toggle("no-scroll", isSideBarOpen.value);
 }
 function openCloseLang() {
   isLangOpen.value = !isLangOpen.value;
 }
 
 // MAPS
-    const zoom = ref(17)
-    const showMap = ref(false)
+const zoom = ref(17);
+const showMap = ref(false);
 </script>
 <template>
   <div class="h-full flex flex-col scrollbarActive overflow-hidden relative">
-    <div id="main" class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] md:w-[1300px] w-full mx-auto">
+    <div id="main" class="max-w-[1360px] w-full mx-auto">
       <!-- Navbar Start -->
       <div
-        class="w-full py-8 xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 flex justify-between items-center"
+        class="w-full py-8 px-2 sm_md:px-6 flex justify-between items-center"
       >
-        <div class="w-[30%] flex items-center">
-          <logo
-            class="xxl:ml-0 xl:ml-0 lg:ml-0 md:ml-0 ml-2 scale-125 xxl:scale-100 xl:scale-100 lg:scale-100 md:scale-100"
-          />
+        <div class="flex items-center">
+          <logo class="text-xs md:text-2xl" />
         </div>
-        <div class="w-[70%] flex justify-end items-center">
-          <ul class="xxl:flex xl:flex lg:flex hidden justify-between w-[60%]">
+        <div class="flex justify-end items-center">
+          <ul class="xxl:flex xl:flex lg:flex hidden justify-between gap-12">
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal whitespace-nowrap"
                 href="#main"
                 >{{ $t("menu.main") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal whitespace-nowrap"
                 href="#service"
                 >{{ $t("menu.service") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal whitespace-nowrap"
                 href="#advantages"
                 >{{ $t("menu.advantages") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal whitespace-nowrap"
                 href="#about"
                 >{{ $t("menu.about") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base manrope-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal whitespace-nowrap"
                 href="#contacts"
                 >{{ $t("menu.contacts") }}</a
               >
             </li>
           </ul>
-          <div class="flex justify-start items-center w-[60%]">
+          <div class="flex justify-start items-center">
             <div
-              class="text-xl ml-[72px] flex items-center relative"
+              class="text-xl pl:ml-[72px] flex items-center relative"
               @click="openCloseLang"
             >
               <span
                 :class="isLangOpen ? 'text-mRed' : 'text-mGray'"
-                class="capitalize text-base rf-dewi-font-light"
+                class="capitalize text-base manrope-font-normal"
                 >{{ $t(`lang.${locale}`) }}</span
               >
               <arrow
@@ -158,26 +156,26 @@ function openCloseLang() {
               <div v-if="isLangOpen" class="absolute text-mWhite top-8">
                 <div
                   @click="locale = 'ru'"
-                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer manrope-font-normal"
                 >
                   {{ $t("lang.ru") }}
                 </div>
                 <div
                   @click="locale = 'en'"
-                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer manrope-font-normal"
                 >
                   {{ $t("lang.en") }}
                 </div>
                 <div
                   @click="locale = 'uz'"
-                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer rf-dewi-font-normal"
+                  class="border-none text-mGray hover:text-mRed mt-1 text-base cursor-pointer manrope-font-normal"
                 >
                   {{ $t("lang.uz") }}
                 </div>
               </div>
             </div>
             <div
-              class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden text-mWhite justify-between group hover:text-mRed items-center ml-10"
+              class="lg:flex hidden manrope-font-semibold text-mWhite justify-between group hover:text-mRed items-center ml-10"
             >
               <svg
                 class="mr-4 stroke-mWhite group-hover:stroke-mRed"
@@ -200,35 +198,33 @@ function openCloseLang() {
             </div>
             <burger
               @click="openCloseSidebar"
-              class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex"
+              class="lg:hidden flex ml-2"
             ></burger>
           </div>
-        </div>       
+        </div>
       </div>
       <!-- Navbar End -->
       <!-- Under Navbar Start -->
       <div
-        class="w-full py-14 mt-14 xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col flex justify-between items-center relative"
+        class="w-full py-14 mt-14 md:flex-row flex-col flex justify-between items-start relative"
       >
         <div
-          class="flex flex-col xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-[32px] xxl:text-[56px] xl:text-[56px] lg:text-[56px] md:text-[56px] slg:text-[56px]"
+          class="flex flex-wrap w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-[32px] md:text-[50px] max-w-[756px]"
         >
-          <span class="text-mWhite rf-dewi-font-bold">{{
+          <span class="text-mWhite rf-dewi-font-bold whitespace-nowrap">{{
             $t("header.title_1")
           }}</span>
-          <div>
-            <span class="text-mRed rf-dewi-font-bold"
-              >{{ $t("header.title_2") }} </span
-            ><span class="text-mWhite rf-dewi-font-bold">{{
-              $t("header.title_3")
-            }}</span>
-          </div>
+          <span class="text-mRed rf-dewi-font-bold mx-1 whitespace-nowrap"
+            >{{ $t("header.title_2") }} </span
+          ><span class="text-mWhite rf-dewi-font-bold whitespace-nowrap">{{
+            $t("header.title_3")
+          }}</span>
         </div>
         <div
-          class="flex justify-center items-center pt-6 xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 px-6"
+          class="flex justify-end items-center w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 px-6"
         >
           <div
-            class="text-2Gray xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full flex justify-end text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base leading-6 manrope-font-normal"
+            class="text-2Gray text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base leading-6 manrope-font-normal w-[420px] mt-5"
           >
             {{ $t("header.text") }}
           </div>
@@ -236,8 +232,16 @@ function openCloseLang() {
         <div
           class="xxl:h-[152px] xl:h-[152px] lg:h-[152px] md:h-[152px] slg:h-[152px] h-[112px] xxl:w-[152px] xl:w-[152px] lg:w-[152px] md:w-[152px] slg:w-[152px] w-[112px] rounded-full bg-mRed absolute top-[80%] right-[50px] flex justify-center items-center text-mWhite tracking-wider manrope-font-normal text-xs xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
         >
-          <a href="#contacts" class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden">{{ $t("header.circle") }}</a>
-          <a href="tel:+998979991530" class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex">{{ $t("header.circle") }}</a>
+          <a
+            href="#contacts"
+            class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden manrope-font-semibold"
+            >{{ $t("header.circle") }}</a
+          >
+          <a
+            href="tel:+998979991530"
+            class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden flex"
+            >{{ $t("header.circle") }}</a
+          >
         </div>
       </div>
       <!-- Under Navbar End -->
@@ -264,12 +268,12 @@ function openCloseLang() {
         <div
           class="flex flex-col text-[24px] xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
         >
-          <span class="text-mWhite tracking-wider rf-dewi-font-semibold"
+          <span class="text-mWhite tracking-wider rf-dewi-font-bold"
             >{{ $t("carousel.title_1") }}
           </span>
-          <div class="text-mWhite tracking-wider rf-dewi-font-semibold">
+          <div class="text-mWhite tracking-wider rf-dewi-font-bold">
             {{ $t("carousel.title_2") }}
-            <span class="text-mRed tracking-wider rf-dewi-font-semibold">{{
+            <span class="text-mRed tracking-wider rf-dewi-font-bold">{{
               $t("carousel.title_3")
             }}</span>
           </div>
@@ -278,7 +282,7 @@ function openCloseLang() {
           class="flex justify-end items-center xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-2Gray"
         >
           <div
-            class="xxl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[60%] slg:w-[60%] w-full text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base  xxl:ml-14 xl:ml-14 lg:ml-14 ml-0 xxl:mt-0 xl:mt-0 lg:mt-0 mt-4 manrope-font-normal"
+            class="xxl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[60%] slg:w-[60%] w-full text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base xxl:ml-14 xl:ml-14 lg:ml-14 ml-0 xxl:mt-0 xl:mt-0 lg:mt-0 mt-4 manrope-font-normal"
           >
             {{ $t("carousel.text") }}
           </div>
@@ -290,8 +294,8 @@ function openCloseLang() {
         class="slider-container w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] relative xxl:mt-[103px] xl:mt-[103px] lg:mt-[103px] md:mt-[103px] mt-[34px]"
       >
         <div
-          class="slider w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] xxl:flex xl:flex lg:flex md:flex slg:flex "
-          :style="{ transform: `translateX(-${currentItem * 100}%)`}"
+          class="slider w-full xxl:h-[553px] xl:h-[553px] lg:h-[553px] md:h-[553px] slg:h-[553px] h-[650px] xxl:flex xl:flex lg:flex md:flex slg:flex"
+          :style="{ transform: `translateX(-${currentItem * 100}%)` }"
           v-if="carouselData.length > 0"
         >
           <div
@@ -306,7 +310,7 @@ function openCloseLang() {
                 class="xxl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] slg:w-[50%] w-full flex justify-start xxl:mt-[114px] xl:mt-[114px] lg:mt-[114px] md:mt-[114px] mt-[32px]"
               >
                 <div
-                  class="xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full" 
+                  class="xxl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 slg:w-4/5 w-full"
                 >
                   <h2
                     class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] xxl:manrope-font-semibold xl:manrope-font-semibold lg:manrope-font-semibold md:manrope-font-semibold slg:manrope-font-semibold manrope-font-bold"
@@ -333,7 +337,7 @@ function openCloseLang() {
           </div>
         </div>
         <div
-          class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden bottom-[84px] absolute justify-between items-center"
+          class="xxl:flex xl:flex lg:flex md:flex slg:flex hidden manrope-font-semibold bottom-[84px] absolute justify-between items-center"
         >
           <div
             @click="prev"
@@ -503,26 +507,126 @@ function openCloseLang() {
           class="group hover:border-mRed border border-2Gray h-[366px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
         >
           <div>
-            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <mask id="mask0_488_1113" x="0" y="0" width="56" height="56">
-              <path d="M0 3.8147e-06H56V56H0V3.8147e-06Z" class="fill-mWhite group-hover:fill-mRed" />
+                <path
+                  d="M0 3.8147e-06H56V56H0V3.8147e-06Z"
+                  class="fill-mWhite group-hover:fill-mRed"
+                />
               </mask>
               <g>
-              <path d="M8.67679 45.6241V4.00466C8.67679 2.25291 10.1092 0.820316 11.8609 0.820316H44.1361C45.8877 0.820316 47.3232 2.25291 47.3232 4.00466V51.9925C47.3232 53.7441 45.8877 55.1797 44.1361 55.1797H11.8609C10.1092 55.1797 8.67679 53.7441 8.67679 51.9925V49.3384" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M43.6058 11.436V51.4622H12.3911V4.53471H20.5668M35.43 4.53471H43.6058V7.72178" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M20.5668 0.820251H35.43V4.53473C35.43 6.57786 33.7591 8.25195 31.7158 8.25195H24.2842C22.2379 8.25195 20.5668 6.57786 20.5668 4.53473V0.820251Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M15.5783 20.8862H20.2474V16.2138H15.5783V20.8862Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M15.5783 30.8665H20.2474V26.1941H15.5783V30.8665Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M15.5783 40.8464H20.2474V36.1743H15.5783V40.8464Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M34.5807 30.5781V15.5783H39.8885V41.5256H34.5807V34.2953" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M34.5807 15.5784H39.8885L37.2345 10.7356L34.5807 15.5784Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M36.1743 46.4084H38.2979C39.1723 46.4084 39.8885 45.6924 39.8885 44.8149V41.5254H34.5807V44.8149C34.5807 45.6924 35.2968 46.4084 36.1743 46.4084Z" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M23.2208 20.1421H28.9534M23.2208 16.9581H31.6072" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M25.1337 4.53491H30.8664" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M23.2208 30.1221H28.9534M23.2208 26.9381H31.6072" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M23.2208 40.1023H28.9534M23.2208 36.9183H31.6072" class="stroke-mWhite group-hover:stroke-mRed" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                  d="M8.67679 45.6241V4.00466C8.67679 2.25291 10.1092 0.820316 11.8609 0.820316H44.1361C45.8877 0.820316 47.3232 2.25291 47.3232 4.00466V51.9925C47.3232 53.7441 45.8877 55.1797 44.1361 55.1797H11.8609C10.1092 55.1797 8.67679 53.7441 8.67679 51.9925V49.3384"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M43.6058 11.436V51.4622H12.3911V4.53471H20.5668M35.43 4.53471H43.6058V7.72178"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.5668 0.820251H35.43V4.53473C35.43 6.57786 33.7591 8.25195 31.7158 8.25195H24.2842C22.2379 8.25195 20.5668 6.57786 20.5668 4.53473V0.820251Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5783 20.8862H20.2474V16.2138H15.5783V20.8862Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5783 30.8665H20.2474V26.1941H15.5783V30.8665Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5783 40.8464H20.2474V36.1743H15.5783V40.8464Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.5807 30.5781V15.5783H39.8885V41.5256H34.5807V34.2953"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.5807 15.5784H39.8885L37.2345 10.7356L34.5807 15.5784Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M36.1743 46.4084H38.2979C39.1723 46.4084 39.8885 45.6924 39.8885 44.8149V41.5254H34.5807V44.8149C34.5807 45.6924 35.2968 46.4084 36.1743 46.4084Z"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M23.2208 20.1421H28.9534M23.2208 16.9581H31.6072"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M25.1337 4.53491H30.8664"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M23.2208 30.1221H28.9534M23.2208 26.9381H31.6072"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M23.2208 40.1023H28.9534M23.2208 36.9183H31.6072"
+                  class="stroke-mWhite group-hover:stroke-mRed"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </g>
-              </svg>
+            </svg>
           </div>
           <div
             class="text-mWhite xxl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] slg:text-[24px] text-[20px] mt-8 manrope-font-semibold w-full"
@@ -587,21 +691,17 @@ function openCloseLang() {
         class="xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full flex flex-col justify-between"
       >
         <div
-          class="text-mWhite flex flex-col tracking-wider xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 p-0 rf-dewi-font-semibold"
+          class="text-mWhite flex flex-col tracking-wider xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] w-full xxl:pr-8 xl:pr-8 md:pr-8 lg:pr-8 p-0 rf-dewi-font-bold"
         >
           <div>
-            <span class="text-mRed ">{{
-              $t("associate.title_1_1")
-            }}</span
-            ><span class=" text-mWhite">
+            <span class="text-mRed">{{ $t("associate.title_1_1") }}</span
+            ><span class="text-mWhite">
               {{ $t("associate.title_1_2") }}
             </span>
           </div>
           <div>
             <span class="">{{ $t("associate.title_2_1") }}</span
-            ><span
-              class="text-mRed  text-red-700 text-[40px] leading-[52px]"
-            >
+            ><span class="text-mRed text-red-700 text-[40px] leading-[52px]">
               {{ $t("associate.title_2_2") }}
             </span>
           </div>
@@ -663,7 +763,9 @@ function openCloseLang() {
       id="contacts"
       class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
     >
-      <BrandCarousel class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"/>
+      <BrandCarousel
+        class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"
+      />
       <div class="w-full">
         <div
           class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] flex flex-col tracking-wider rf-dewi-font-medium"
@@ -679,10 +781,18 @@ function openCloseLang() {
           class="h-[507px] mb-6 w-full xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block rounded-3xl"
         >
           <!-- <Map class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block"/> -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.0405207750136!2d69.28594171249972!3d41.35147297118484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzA1LjMiTiA2OcKwMTcnMTguNyJF!5e0!3m2!1sru!2s!4v1705515728860!5m2!1sru!2s" width="100%" height="507" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.0405207750136!2d69.28594171249972!3d41.35147297118484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzA1LjMiTiA2OcKwMTcnMTguNyJF!5e0!3m2!1sru!2s!4v1705515728860!5m2!1sru!2s"
+            width="100%"
+            height="507"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div
-          class="xxl:w-[553px] xl:w-[553px] lg:w-[553px] md:w-[553px] slg:w-[553px] w-full border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
+          class="xxl:w-[553px] xl:w-[553px] lg:w-[553px] md:w-[553px] slg:w-[553px] mr-3 w-full border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
         >
           <h2
             class="text-4xl text-mWhite rf-dewi-font-semibold text-[20px] xxl:text-[32px] xl:text-[32px] lg:text-[32px] md:text-[32px] slg:text-[32px]"
@@ -746,8 +856,8 @@ function openCloseLang() {
               >
               <div class="w-full mt-2">
                 <span
-                class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
-                >+998 (97) 999 15 30</span
+                  class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                  >+998 (97) 999 15 30</span
                 >
                 <span
                   class="mt-2 ml-5 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
@@ -789,13 +899,20 @@ function openCloseLang() {
               >
             </div>
           </div>
-        </div>      
+        </div>
         <div
           class="h-full xxl:w-[773px] xl:w-[773px] lg:w-[773px] md:w-[773px] slg:w-[773px] w-full col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
         >
           <!-- <Map2 />    -->
-          <div style="position:relative;overflow:hidden;"> 
-            <iframe src="https://yandex.uz/map-widget/v1/?ll=69.288522%2C41.351473&mode=search&ouri=ymapsbm1%3A%2F%2Fgeo%3DCgoxNTIyNTUxMjY2Ei1Pyrt6YmVraXN0b24sIFRvc2hrZW50LCBDaGlub2JvZCBrb8q7Y2hhc2ksIDEiCg3Bk4pCFUJoJUI%2C&z=17.06" width="100%" height="509" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 24px;"></iframe>
+          <div style="position: relative; overflow: hidden">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?ll=69.288522%2C41.351473&mode=search&ouri=ymapsbm1%3A%2F%2Fgeo%3DCgoxNTIyNTUxMjY2Ei1Pyrt6YmVraXN0b24sIFRvc2hrZW50LCBDaGlub2JvZCBrb8q7Y2hhc2ksIDEiCg3Bk4pCFUJoJUI%2C&z=17.06"
+              width="100%"
+              height="509"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative; border-radius: 24px"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -868,7 +985,7 @@ function openCloseLang() {
         </div>
         <a
           href="#main"
-          class="absolute cursor-pointer border border-mWhite w-14 h-14 xxl:flex xl:flex lg:flex md:flex slg:flex hidden -right-[144px] bottom-8 rounded-full justify-center items-center"
+          class="absolute cursor-pointer border border-mWhite w-14 h-14 xxl:flex xl:flex lg:flex md:flex slg:flex hidden -right-[144px] bottom-8 rounded-full justify-center items-center manrope-font-semibold"
         >
           <svg
             width="24"
@@ -899,15 +1016,21 @@ function openCloseLang() {
       class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col mx-auto flex justify-between items-center my-6"
     >
       <span
-        class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left w-1/2 text-center manrope-font-normal text-mWhite opacity-20"
+        class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left text-center manrope-font-normal text-mWhite opacity-20"
         >©2020-2023 RavoWorld. {{ $t("contact.copy_right") }}</span
       >
-      <span
-        class="xxl:text-right xl:text-right lg:text-right md:text-right slg:text-right w-1/2 text-center xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-8 manrope-font-normal"
+      <a
+        href="https://www.nextmark.uz/"
+        target="_blank"
+        class="xxl:text-right xl:text-right lg:text-right md:text-right slg:text-right text-center xxl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-8 manrope-font-normal cursor-pointer"
       >
-        <span class="text-mWhite opacity-20 manrope-font-normal">designed by</span>
-        <span class="text-mWhite opacity-40 manrope-font-normal"> Nextmark</span>
-      </span>
+        <span class="text-mWhite opacity-20 manrope-font-normal"
+          >designed by</span
+        >
+        <span class="text-mWhite opacity-40 manrope-font-normal">
+          Nextmark</span
+        >
+      </a>
     </div>
     <!-- Sidebar Start -->
     <div
@@ -966,18 +1089,23 @@ function openCloseLang() {
           >+998 97 999 15 30</span
         >
       </div>
-      <div class="flex justify-center mt-24">
+      <a
+        href="https://www.nextmark.uz/"
+        target="_blank"
+        class="flex justify-center mt-24 cursor-pointer"
+      >
         <span class="text-xl manrope-font-normal text-mGray opacity-30"
           >designed by</span
         >
-        <span class="text-xl manrope-font-normal text-mGray ml-2">Nextmark</span>
-      </div>
+        <span class="text-xl manrope-font-normal text-mGray ml-2"
+          >Nextmark</span
+        >
+      </a>
     </div>
     <!-- Sidebar Start -->
   </div>
 </template>
 <style>
-
 body {
   background-color: #0b1117;
 }
