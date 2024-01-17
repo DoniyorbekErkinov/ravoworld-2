@@ -673,7 +673,7 @@ function openCloseLang() {
         </div>
       </div>
       <div
-        class="w-full xxl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[500px] slg:h-[500px] h-[1050px] xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex flex-col justify-between xxl:mt-14 xl:mt-14 lg:mt-14 md:mt-14 mt-12 py-8"
+        class="w-full xxl:h-[509px] xl:h-[509px] lg:h-[509px] md:h-[509px] slg:h-[509px] h-[1050px] xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex flex-col justify-between xxl:mt-14 xl:mt-14 lg:mt-14 md:mt-14 mt-12"
       >
         <div
           class="h-[507px] mb-6 w-full xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block rounded-3xl"
