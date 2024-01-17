@@ -89,7 +89,7 @@ function openCloseLang() {
 </script>
 <template>
   <div class="h-full flex flex-col scrollbarActive overflow-hidden relative">
-    <div id="main" class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] md:w-[1300px] w-full mx-auto">
+    <div id="main" class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] md:w-[1300px] w-full mx-auto">
       <!-- Navbar Start -->
       <div
         class="w-full py-8 xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 flex justify-between items-center"
@@ -255,7 +255,7 @@ function openCloseLang() {
     <!-- Carausel Start -->
     <div
       id="service"
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto mt-[134px]"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto mt-[134px]"
     >
       <!-- Header Start -->
       <div
@@ -443,7 +443,7 @@ function openCloseLang() {
     <!-- Result Start -->
     <div
       id="advantages"
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px]"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px]"
     >
       <div
         class="xxl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] slg:w-[70%] w-full mx-auto flex flex-col items-center"
@@ -581,7 +581,7 @@ function openCloseLang() {
     <!-- Counts Start -->
     <div
       id="about"
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:h-[700px] xl:h-[700px] lg:h-[700px] md:h-[700px] slg:h-[700px] h-[1650px] mx-auto xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] flex xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col justify-between xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:h-[700px] xl:h-[700px] lg:h-[700px] md:h-[700px] slg:h-[700px] h-[1650px] mx-auto xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] flex xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col justify-between xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
     >
       <div
         class="xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full flex flex-col justify-between"
@@ -661,7 +661,7 @@ function openCloseLang() {
     <!-- Contact Start -->
     <div
       id="contacts"
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
     >
       <BrandCarousel class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"/>
       <div class="w-full">
@@ -790,7 +790,7 @@ function openCloseLang() {
           </div>
         </div>      
         <div
-          class="h-full xxl:w-[783px] xl:w-[783px] lg:w-[783px] md:w-[783px] slg:w-[783px] w-full col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
+          class="h-full xxl:w-[773px] xl:w-[773px] lg:w-[773px] md:w-[773px] slg:w-[773px] w-full col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
         >
           <Map2 />        
         </div>
@@ -798,7 +798,7 @@ function openCloseLang() {
     </div>
     <!-- Contact End -->
     <div
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto mt-14"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full mx-auto mt-14"
     >
       <!-- Navbar Start -->
       <div
@@ -892,7 +892,7 @@ function openCloseLang() {
     </div>
     <div style="border: 1px solid rgba(255, 255, 255, 0.1)"></div>
     <div
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col mx-auto flex justify-between items-center my-6"
+      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col mx-auto flex justify-between items-center my-6"
     >
       <span
         class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left w-1/2 text-center manrope-font-normal text-mWhite opacity-20"
