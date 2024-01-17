@@ -2,7 +2,7 @@
 import { ref, onMounted, watch } from "vue";
 import { useHelper } from './composible'
 import { useI18n } from "vue-i18n";
-import Map from './components/map.vue'
+import Map  from './components/map.vue'
 import Map2 from './components/map2.vue'
 import handGlobe from "./components/handGlobe.vue";
 import warning from "./components/warning.vue";
@@ -12,7 +12,7 @@ import burger from "./components/burger.vue";
 import cross from "./components/cross.vue";
 import phone from "./components/phone.vue";
 import arrow from "./components/arrow.vue";
-import BrandCarousel from "./components/BrandCarousel.vue";
+const BrandCarousel = () => import("./components/BrandCarousel.vue")
 const {carouselData} = useHelper()
 const { locale, t } = useI18n();
 const currentItem = ref(1);
@@ -213,13 +213,13 @@ function openCloseLang() {
         <div
           class="flex flex-col xxl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 slg:w-1/2 w-full xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 text-[32px] xxl:text-[56px] xl:text-[56px] lg:text-[56px] md:text-[56px] slg:text-[56px]"
         >
-          <span class="text-mWhite rf-dewi-font-semibold">{{
+          <span class="text-mWhite rf-dewi-font-bold">{{
             $t("header.title_1")
           }}</span>
           <div>
-            <span class="text-mRed rf-dewi-font-semibold"
+            <span class="text-mRed rf-dewi-font-bold"
               >{{ $t("header.title_2") }} </span
-            ><span class="text-mWhite rf-dewi-font-semibold">{{
+            ><span class="text-mWhite rf-dewi-font-bold">{{
               $t("header.title_3")
             }}</span>
           </div>
@@ -678,7 +678,8 @@ function openCloseLang() {
         <div
           class="h-[507px] mb-6 w-full xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block rounded-3xl"
         >
-          <Map class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block"/>        
+          <!-- <Map class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block"/> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.0405207750136!2d69.28594171249972!3d41.35147297118484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzA1LjMiTiA2OcKwMTcnMTguNyJF!5e0!3m2!1sru!2s!4v1705515728860!5m2!1sru!2s" width="100%" height="507" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div
           class="xxl:w-[553px] xl:w-[553px] lg:w-[553px] md:w-[553px] slg:w-[553px] w-full border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
@@ -792,7 +793,10 @@ function openCloseLang() {
         <div
           class="h-full xxl:w-[773px] xl:w-[773px] lg:w-[773px] md:w-[773px] slg:w-[773px] w-full col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
         >
-          <Map2 />        
+          <!-- <Map2 />    -->
+          <div style="position:relative;overflow:hidden;"> 
+            <iframe src="https://yandex.uz/map-widget/v1/?ll=69.288522%2C41.351473&mode=search&ouri=ymapsbm1%3A%2F%2Fgeo%3DCgoxNTIyNTUxMjY2Ei1Pyrt6YmVraXN0b24sIFRvc2hrZW50LCBDaGlub2JvZCBrb8q7Y2hhc2ksIDEiCg3Bk4pCFUJoJUI%2C&z=17.06" width="100%" height="509" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 24px;"></iframe>
+          </div>
         </div>
       </div>
     </div>
