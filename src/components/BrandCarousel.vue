@@ -1,8 +1,8 @@
 <template>
   <div
-    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[200px] brand-carousel relative flex flex-col justify-between"
+    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[224px] brand-carousel flex flex-col justify-between"
   >
-  <div class="w-full mb-[80px]">
+  <div class="w-full">
     <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mWhite">{{$t('brand_title_1')}}</span> 
     <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mRed">{{$t('brand_title_2')}}</span> 
   </div>
@@ -15,11 +15,11 @@
         delay: 500,
       }"
     >
-      <swiper-slide class="mr-1" v-for="i in 9" :key="i">
+      <swiper-slide class="mr-16" v-for="i in 9" :key="i">
         <img
           @mouseover="activeHoverFn(i, 'over')"
           @mouseleave="activeHoverFn(i, 'leave')"
-          class="brand-image mr-1"
+          class="brand-image"
           :src="
             activeHover == i
               ? `/img/brand_${i}.svg`
@@ -27,11 +27,11 @@
           "
         />
       </swiper-slide>
-      <swiper-slide class="mr-1" v-for="i in 9" :key="i">      
+      <swiper-slide class="mr-16" v-for="i in 9" :key="i">      
         <img
           @mouseover="activeHoverFn(i, 'over')"
           @mouseleave="activeHoverFn(i, 'leave')"
-          class="brand-image mr-1"
+          class="brand-image"
           :src="
             activeHover == i
               ? `/img/brand_${i}.svg`
@@ -39,11 +39,11 @@
           "
         />
       </swiper-slide>
-      <swiper-slide class="mr-1" v-for="i in 9" :key="i">      
+      <swiper-slide class="mr-16" v-for="i in 9" :key="i">      
         <img
           @mouseover="activeHoverFn(i, 'over')"
           @mouseleave="activeHoverFn(i, 'leave')"
-          class="brand-image mr-1"
+          class="brand-image"
           :src="
             activeHover == i
               ? `/img/brand_${i}.svg`
@@ -95,54 +95,15 @@ onMounted(() => {
 <style scoped>
 .brand-carousel {
   background: transparent;
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
   overflow: hidden; /* Ensure that content is clipped within the specified width */
 }
 
-.brands1,
-.brands2,
-.brands3 {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  animation: sideToSide 15s infinite linear;
-  background: #0b1117;
-}
 
-.brands2 {
-  animation: sideToSide2 15s infinite linear;
-}
-
-.brands3 {
-  animation: sideToSide3 15s infinite linear;
-}
-
-.brand {
-  margin: 0 10px;
-  padding: 0;
-  width: 100%;
-  height: 80px;
-  background: #0b1117;
-}
-
-.brand-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent; /* Set the desired background color */
-  z-index: 1; /* Ensure overlay is above the image */
-}
 
 .brand-image {
   width: 100%;
-  height: 100%;
+  height: 80px;
   object-fit: contain;
-  z-index: 2; /* Adjust object-fit property as needed */
   background-color: #0b1117; /* Set the desired background color */
 }
 

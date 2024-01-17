@@ -103,35 +103,35 @@ function openCloseLang() {
           <ul class="xxl:flex xl:flex lg:flex hidden justify-between w-[60%]">
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#main"
                 >{{ $t("menu.main") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#service"
                 >{{ $t("menu.service") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#advantages"
                 >{{ $t("menu.advantages") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#about"
                 >{{ $t("menu.about") }}</a
               >
             </li>
             <li class="hover:text-mRed underline-hover cursor-pointer">
               <a
-                class="text-mGray hover:text-mRed text-base rf-dewi-font-normal"
+                class="text-mGray hover:text-mRed text-base manrope-font-normal"
                 href="#contacts"
                 >{{ $t("menu.contacts") }}</a
               >
@@ -661,7 +661,7 @@ function openCloseLang() {
     <!-- Contact Start -->
     <div
       id="contacts"
-      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col relative"
+      class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
     >
       <BrandCarousel class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"/>
       <div class="w-full">
@@ -673,7 +673,7 @@ function openCloseLang() {
         </div>
       </div>
       <div
-        class="w-full xxl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[500px] slg:h-[500px] h-[1050px] xxl:grid xl:grid lg:grid md:grid slg:grid flex flex-col grid-cols-3 gap-6 xxl:mt-14 xl:mt-14 lg:mt-14 md:mt-14 mt-12 py-8"
+        class="w-full xxl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[500px] slg:h-[500px] h-[1050px] xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex flex-col justify-between xxl:mt-14 xl:mt-14 lg:mt-14 md:mt-14 mt-12 py-8"
       >
         <div
           class="h-[507px] mb-6 w-full xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block rounded-3xl"
@@ -681,7 +681,7 @@ function openCloseLang() {
           <Map class="xxl:hidden xl:hidden lg:hidden md:hidden slg:hidden block"/>        
         </div>
         <div
-          class="border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
+          class="xxl:w-[553px] xl:w-[553px] lg:w-[553px] md:w-[553px] slg:w-[553px] w-full border border-2Gray col-span-1 py-[72px] xxl:px-[64px] xl:px-[64px] lg:px-[64px] md:px-[64px] slg:px-[64px] px-[40px] bg-3Black rounded-xl"
         >
           <h2
             class="text-4xl text-mWhite rf-dewi-font-semibold text-[20px] xxl:text-[32px] xl:text-[32px] lg:text-[32px] md:text-[32px] slg:text-[32px]"
@@ -722,7 +722,7 @@ function openCloseLang() {
               </div>
             </div>
           </div>
-          <div class="flex justify-start text-mWhite mt-8">
+          <div class="flex justify-start text-mWhite mt-8 w-full">
             <svg
               class="mt-1"
               width="24"
@@ -738,15 +738,21 @@ function openCloseLang() {
                 stroke-linejoin="round"
               />
             </svg>
-            <div class="flex flex-col ml-4">
+            <div class="flex flex-col ml-4 w-full">
               <span
                 class="manrope-font-semibold text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
                 >{{ $t("contact.telefon") }}</span
               >
-              <span
+              <div class="w-full mt-2">
+                <span
                 class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
                 >+998 (97) 999 15 30</span
-              >
+                >
+                <span
+                  class="mt-2 ml-5 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                  >+998 (97) 999 15 30</span
+                >
+              </div>
             </div>
           </div>
           <div class="flex justify-start text-mWhite mt-8">
@@ -784,7 +790,7 @@ function openCloseLang() {
           </div>
         </div>      
         <div
-          class="h-full w-full  col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
+          class="h-full xxl:w-[783px] xl:w-[783px] lg:w-[783px] md:w-[783px] slg:w-[783px] w-full col-span-2 rounded-3xl xxl:block xl:block lg:block md:block slg:block hidden"
         >
           <Map2 />        
         </div>
