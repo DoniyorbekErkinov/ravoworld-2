@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[509px] rounded-3xl " id="map2"></div>
+    <div class="xxl:h-full xl:h-full lg:h-full md:h-full slg:h-full h-[783px] rounded-3xl " id="map2"></div>
 </template>
 
 <style scoped>
