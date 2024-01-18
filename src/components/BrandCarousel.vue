@@ -12,7 +12,7 @@
       :space-between="spaceBetween"
       :centered-slides="false"
       :autoplay="{
-        delay: 500,
+        delay: 250,
       }"
     >
       <swiper-slide class="mr-16" v-for="i in 9" :key="i">      
