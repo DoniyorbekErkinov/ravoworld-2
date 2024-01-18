@@ -1,10 +1,10 @@
 <template>
   <div
-    class="xxl:w-[1350px] xl:w-[1350px] lg:w-[1300px] w-full h-[224px] brand-carousel flex flex-col justify-between"
+    class=" w-full h-[224px] brand-carousel flex flex-col justify-between"
   >
   <div class="w-full">
-    <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mWhite">{{$t('brand_title_1')}}</span> 
-    <span class="rf-dewi-font xxl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] slg:text-[40px] text-[24px] text-mRed">{{$t('brand_title_2')}}</span> 
+    <span class="rf-dewi-font-semibold slg:text-[40px] text-[24px] text-mWhite">{{$t('brand_title_1')}}</span> 
+    <span class="rf-dewi-font-semibold slg:text-[40px] text-[24px] text-mRed">{{$t('brand_title_2')}}</span> 
   </div>
     <swiper-container
     class="w-full h-[80px]"
@@ -15,18 +15,6 @@
         delay: 500,
       }"
     >
-      <swiper-slide class="mr-16" v-for="i in 9" :key="i">
-        <img
-          @mouseover="activeHoverFn(i, 'over')"
-          @mouseleave="activeHoverFn(i, 'leave')"
-          class="brand-image"
-          :src="
-            activeHover == i
-              ? `/img/brand_${i}.svg`
-              : `/img/brand_${i}_hover.svg`
-          "
-        />
-      </swiper-slide>
       <swiper-slide class="mr-16" v-for="i in 9" :key="i">      
         <img
           @mouseover="activeHoverFn(i, 'over')"
@@ -39,7 +27,19 @@
           "
         />
       </swiper-slide>
-      <swiper-slide class="mr-16" v-for="i in 9" :key="i">      
+      <swiper-slide class="mr-16" v-for="i in 9" :key="i">             
+        <img
+          @mouseover="activeHoverFn(i, 'over')"
+          @mouseleave="activeHoverFn(i, 'leave')"
+          class="brand-image"
+          :src="
+            activeHover == i
+              ? `/img/brand_${i}.svg`
+              : `/img/brand_${i}_hover.svg`
+          "
+        />
+      </swiper-slide>
+      <swiper-slide class="mr-16" v-for="i in 9" :key="i">             
         <img
           @mouseover="activeHoverFn(i, 'over')"
           @mouseleave="activeHoverFn(i, 'leave')"
@@ -67,7 +67,6 @@ const handleResize = () => {
   if (screenWidth.value < 601) {
     slidesPerViewRef.value = 3
   } 
-  console.log(screenWidth.value);
 };
 function activeHoverFn(index, type) {
   if (type == "over") {

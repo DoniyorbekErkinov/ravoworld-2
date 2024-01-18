@@ -2,8 +2,6 @@
 import { ref, onMounted, watch } from "vue";
 import { useHelper } from "./composible";
 import { useI18n } from "vue-i18n";
-// import Map from "./components/map.vue";
-// import Map2 from "./components/map2.vue";
 import handGlobe from "./components/handGlobe.vue";
 import warning from "./components/warning.vue";
 import headphones from "./components/headphones.vue";
@@ -12,7 +10,7 @@ import burger from "./components/burger.vue";
 import cross from "./components/cross.vue";
 import phone from "./components/phone.vue";
 import arrow from "./components/arrow.vue";
-const BrandCarousel = () => import("./components/BrandCarousel.vue");
+import BrandCarousel from "./components/BrandCarousel.vue";
 const { carouselData } = useHelper();
 const { locale, t } = useI18n();
 const currentItem = ref(1);
@@ -701,7 +699,7 @@ const showMap = ref(false);
           </div>
           <div>
             <span class="">{{ $t("associate.title_2_1") }}</span
-            ><span class="text-mRed text-red-700 text-[40px] leading-[52px]">
+            ><span class="text-mRed text-red-700  leading-[52px]">
               {{ $t("associate.title_2_2") }}
             </span>
           </div>
@@ -761,11 +759,11 @@ const showMap = ref(false);
     <!-- Contact Start -->
     <div
       id="contacts"
-      class="xxl:w-[1360px] xl:w-[1350px] lg:w-[1300px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
+      class="lg:w-[1360px] w-full xxl:mt-[184px] xl:mt-[184px] lg:mt-[184px] md:mt-[184px] mt-[120px] xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6 h-auto mx-auto flex flex-col"
     >
       <BrandCarousel
         class="xxl:mb-[184px] xl:mb-[184px] lg:mb-[184px] md:mb-[184px] mb-[120px] xxl:mt-[0px] xl:mt-[0px] lg:mt-[0px] md:mt-[0px] mt-[120px]"
-      />
+      ></BrandCarousel>
       <div class="w-full">
         <div
           class="text-mWhite xxl:text-[40px] xl:text-[40px] lg:text-[40px] text-[24px] flex flex-col tracking-wider rf-dewi-font-medium"
@@ -785,7 +783,7 @@ const showMap = ref(false);
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.0405207750136!2d69.28594171249972!3d41.35147297118484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzA1LjMiTiA2OcKwMTcnMTguNyJF!5e0!3m2!1sru!2s!4v1705515728860!5m2!1sru!2s"
             width="100%"
             height="507"
-            style="border: 0"
+            style="border: 0; border-radius: 24px;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -854,14 +852,14 @@ const showMap = ref(false);
                 class="manrope-font-semibold text-[18px] xxl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] slg:text-[20px]"
                 >{{ $t("contact.telefon") }}</span
               >
-              <div class="w-full mt-2">
+              <div class="w-full flex slg:block flex-col mt-2">
                 <span
                   class="mt-2 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
                   >+998 (97) 999 15 30</span
                 >
                 <span
-                  class="mt-2 ml-5 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
-                  >+998 (97) 999 15 30</span
+                  class="mt-2 ml-0 md:ml-5 manrope-font-normal text-sm xxl:text-base xl:text-base lg:text-base md:text-base slg:text-base"
+                  >+998 (33) 999 15 30</span
                 >
               </div>
             </div>
@@ -1017,7 +1015,7 @@ const showMap = ref(false);
     >
       <span
         class="xxl:text-left xl:text-left lg:text-left md:text-left slg:text-left text-center manrope-font-normal text-mWhite opacity-20"
-        >©2020-2023 RavoWorld. {{ $t("contact.copy_right") }}</span
+        >©2020-2024 RavoWorld. {{ $t("contact.copy_right") }}</span
       >
       <a
         href="https://www.nextmark.uz/"
