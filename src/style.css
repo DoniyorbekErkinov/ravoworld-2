@@ -89,7 +89,7 @@ html {
 } 
 @font-face {
   font-family: 'RF Dewi Bold';
-  src: url('/public/fonts/RFDewiExpanded-Bold.ttf') format('truetype');
+  src: url('/fonts/RFDewiExpanded-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
