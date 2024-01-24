@@ -8,33 +8,33 @@
         "main": "Bosh sahifa",
         "service": "Xizmatlar",
         "advantages": "Afzalliklar",
-        "about": "Biz haqida",
-        "contacts": "A'loqa"
+        "about": "Biz haqimizda",
+        "contacts": "Aloqa"
     },
     "header": {
         "title_1": "Tezkor",
         "title_2": "chegarasiz ",
         "title_3": "yetkazib berish",
-        "text": "Tez, samarali, keraksiz muammosiz. Kompaniyamiz ekspress yuk tashishni taklif qiladi",
-        "circle": "A'loqa"
+        "text": "Kompaniyamiz – tez, samarali, muammosiz ekspress yuk tashish xizmatini taklif qiladi",
+        "circle": "Aloqa"
     },
     "carousel": {
-        "title_1": "Yuk tashish bo'yicha",
-        "title_2":"yechimlar",
-        "title_3":"eng yuqori darajada",                
-        "text": "Bu nafaqat tovarlarni chegaradan o'tkazish, balki sizning biznesingiz uchun xavfsiz yo'llarni yaratish hamdir",
-        "title1": "Xolaqaro avia yuk yetkazish",
-        "text1": "Biz havo transportidan foydalangan holda dunyoning istalgan nuqtasiga tez va samarali etkazib berishni ta'minlaymiz. Bizning tajribamiz va yetakchi aviakompaniyalar bilan hamkorligimiz xavfsiz va o‘z vaqtida yetkazib berishni ta’minlaydi",
-        "title2": "Avtomobil transporti",
-        "text2": "Biz avtomobilda yuk tashish uchun ishonchli va moslashuvchan variantlarni taklif qilamiz. Bizning avtotransport parkimiz va hamkorlar tarmog'imiz aniqlik va samaradorlikni ta'minlagan holda istalgan hajmdagi yuklarni tashishni tashkil qilish imkonini beradi.",
-        "title3": "Temir yo'l orqali yuklarni tashish",
-        "text3": "Biz temir yo'llar orqali xalqaro yuk tashishni optimallashtiramiz. Kompaniyamiz marshrutni rejalashtirish, hujjatlarni rasmiylashtirish va yuklarni kuzatish kabi xizmatlarning to'liq spektrini taqdim etadi",
+        "title_1": "Yuk tashish ",
+        "title_2":"bo'yicha ",
+        "title_3":"eng yuqori darajadagi yechimlar",                
+        "text": "Bu faqatgina tovarlarni chegaradan o'tkazish emas, bu biznesingiz uchun ishonchli yo'llarni yaratishdir.",
+        "title1": "Dunyo bo'ylab yuk yetkazib berish",
+        "text1": "Biz aviatransportdan foydalangan holda dunyoning istalgan nuqtasiga yuklarni tez va samarali yetkazib berishni ta'minlaymiz. Bizning tajribamiz va yetakchi aviakompaniyalar bilan hamkorlik munosabatlarimiz yuklarning xavfsizligi va o'z vaqtida yetkazilishini ta'minlaydi.",
+        "title2": "Yuklarni avtotransport orqali yetkazish",
+        "text2": "Biz yuklarni avtotransport orqali tashish bo'yicha ishonchli va qulay varinatlarni taklif etamiz. Bizning avtotransportlarimiz va hamkorlar tarmog'imiz har qanday hajmdagi yuklarni aniqlik va operativlikni ta'minlagan holda yetkazib berish imkonini beradi.",
+        "title3": "Temir yo‘l orqali yuk tashish",
+        "text3": "Xalqaro yuk tashishni temir yo'l marshrutlari orqali optimallashtiramiz. Kompaniyamiz marshrutlarni rejalashtirish, hujjatlarni rasmiylashtirish va yuklarni kuzatib borishni o'z ichiga olgan to'liq xizmatlar spektrini taqdim etadi.",
         "title4": "Bojxona brokeri xizmati",
-        "text4": "Bizning professional bojxona brokerlarimiz barcha bojxona rasmiyatchiliklarining bajarilishini ta'minlaydi. Biz yuklarni tez va to'g'ri rasmiylashtirishni, xavflarni minimallashtirishni va barcha qonunlarga rioya qilishni kafolatlaymiz",
-        "title5": "Tashqi savdo mutaxassislarini tayyorlash va qayta tayyorlash",
-        "text5": "Biz sizning mutaxassislaringizga qonunchilikdagi so'nggi o'zgarishlardan xabardor bo'lish va bojxona jarayonlarini samarali boshqarishda yordam berib, tashqi iqtisodiy faoliyat (FEA) sohasida treninglar va maslahatlar beramiz.",
+        "text4": "Bizning professional bojxona brokerlarimiz barcha bojxona rasmiyatchiliklariga rioya qilishni ta'minlaydi. Biz yuklarning tez va to'g'ri rasmiylashtirilishini kafolatlaymiz, bu esa xavflarni minimallashtirish va barcha qonunlarga rioya qilishni ta'minlaydi.",
+        "title5": "Tashqi iqtisodiy faoliyat (TIF) mutaxassislarini tayyorlash va qayta tayyorlash",
+        "text5": "Biz tashqi iqtisodiy faoliyat (TIF) sohasida ta'lim va maslahat xizmatlarini taqdim etamiz, bu esa sizning mutaxassislaringizni qonunchilikdagi so'nggi o'zgarishlardan xabardor bo'lishiga va bojxona jarayonlarini samarali boshqarishiga yordam beradi.",
         "title6": "Xalqaro savdo",
-        "text6": "Biz sizning biznesingizga xalqaro savdo orqali chegaralarini kengaytirishga yordam beramiz. Global biznes va xalqaro hamkorlikdagi tajribamiz sizga muvaffaqiyatli savdo qilish va global bozorda biznesingizni rivojlantirishga yordam beradi."
+        "text6": "Biz xalqaro savdo, tovarlarni import va eksport qilish bo'yicha faol ishtirokchimiz. Bizning tajribamiz va jahon bozorlari bo'yicha teran bilimimiz bizga xalqaro savdoning barcha jabhalarini, yangi bozorlarni topishdan tortib, yetkazib berish va logistikani optimallashtirishgacha samarali boshqarish imkonini beradi."
     },
     "underCarousel": {
         "title_1_1": "Shaxsiy",
@@ -42,22 +42,22 @@
         "title_2_1": "Global",
         "title_2_2":"na'tijalar",
         "card": {
-            "title1": "Biz barcha etkazib berishlarni maxsus kalit asosida tashkil qilamiz",
-            "text1": "Biz mijozlarga yuk tashish bilan bog'liq to'liq xizmatlarni taqdim etamiz. Shuningdek, biz konsalting, sug'urta, qo'llab-quvvatlash, bojxona yordamini taqdim etamiz",
-            "title2": "Biz moslashuvchan shartlarni taklif qilamiz",
-            "text2": "Biz mijozga yuk tashish uchun qulay individual to'lov shartlarini taqdim etamiz. Biz har bir etkazib berish yo'nalishini ko'rib chiqamiz va yuk tashish hajmi va vaqtiga muvofiq to'lov tizimiga tuzatishlar kiritamiz.",
-            "title3": "Biz sizning xavflaringizni minimallashtiramiz",
-            "text3": "Biz normativ-huquqiy hujjatlar talablariga muvofiq foydalanish uchun tasdiqlangan transport vositalaridan foydalanamiz. Biz yuk tashish sohasida tegishli ko'nikma va tajribaga ega odamlarni ishga olamiz",
-            "title4": "Biz tranzaksiyaning barcha bosqichlarida aloqadamiz",
-            "text4": "Bizning har bir mijozimizga shaxsiy menejer tayinlangan, u butun tashish jarayonini muvofiqlashtiradi va har qanday muammolarni tezda hal qilish uchun doimiy aloqada bo'ladi."
+            "title1": "Boshdan oyoq yetkazib berish xizmati bilan ta'minlaymiz",
+            "text1": "Biz mijozlarga yuk tashish bilan bog'liq to'liq xizmatlar to'plamini taqdim etamiz. Shuningdek, biz konsultatsiya, sug'urta, qo'llab-quvvatlash va bojxona xizmatlarini ham taqdim etamiz.",
+            "title2": "Biz qulay shartlarni taklif qilamiz.",
+            "text2": "Biz mijozlar uchun yuk tashish to'lovlari bo'yicha qulay individual shartlar taqdim etamiz. Har bir yetkazib berish yo'nalishini ko'rib chiqamiz va yuk hajmi hamda tashish muddatlariga muvofiq hisob-kitob tizimiga tuzatishlar kiritamiz.",
+            "title3": "Xavf-xatarlaringizni minimallashtiramiz",
+            "text3": "Biz normativ-huquqiy hujjatlarning talablariga muvofiq ishlashga ruxsat etilgan transport vositalaridan foydalanamiz. Bizda yuk tashish sohasida tegishli ko'nikma va tajribaga ega bo'lgan xodimlar faoliyat yuritadi.",
+            "title4": "Bitimning barcha bosqichlarida aloqani saqlab turamiz",
+            "text4": "Har bir mijozimiz uchun shaxsiy menejer tayinlanadi, u yuk tashish jarayonini muvofiqlashtiradi va har qanday savollarni tezkor hal qilish uchun doimiy aloqada bo'ladi."
         }
     },
     "associate": {
-        "title_1_1": "Ichonchli ",
-        "title_1_2": "hamkor",
-        "title_2_1": "global ",
-        "title_2_2": "ta'minotda",
-        "text":"{RavoWorld}da biz faqat yuklarni yetkazib berish bilan cheklanmaymiz, balki muvaffaqiyatingiz uchun qo'llanma yaratamiz. Har bir yetkazib berish tarixga aylanadigan biz bilan kundalik hayot chegaralaridan tashqariga qadam qo'ying.",
+        "title_1_1": "Global ",
+        "title_1_2": "yetkazib ",
+        "title_2_1": "berish bo'yicha ",
+        "title_2_2": "ishonchli hamko.",
+        "text":"{RavoWorld}'da biz faqatgina yuklarni yetkazib berishga emas, balki sizning muvaffaqiyatingiz uchun yo'l-yo'riq yaratishga intilamiz. Oddiylikdan tashqariga chiqing va biz bilan birga har bir yetkazib berishni muvaffaqiyat tarixiga aylantiring.",
         "card1": "hamkor davlatlar",
         "card2": "tashkil topgan yili",
         "card3": "mamnun mijozlar",
@@ -65,14 +65,14 @@
     },
     "contact": {
         "title": "Biz tomon qadam tashlang: ",
-        "title_1": "kelajagingiz bizning qo'limizda",
+        "title_1": "Biz bilan kelajakni yarating",
         "contacts": "Kontaktlar",
         "address": "Manzil",
-        "address_map": "100099, Toshkent sh., Yunusobod tumani, ko‘ch. Amira Temura, 2-uy",
+        "address_map": "100099, Toshkent sh. Yunusobod tumani, Amir Temur ko‘ch. 2-uy",
         "telefon": "Telefon",
         "email": "El. pochta",
         "copy_right": "Barcha huquqlar himoyalangan."
     },
     "brand_title_1": "Bizga",
-    "brand_title_2": " ishonishadi"
+    "brand_title_2": " ishonganlar"
 }

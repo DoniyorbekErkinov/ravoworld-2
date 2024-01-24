@@ -8,7 +8,7 @@
         "main": "Home",
         "service": "Service",
         "advantages": "Advantages",
-        "about": "About",
+        "about": "About Us",
         "contacts": "Contacts"
     },
     "header": {
@@ -33,8 +33,8 @@
         "text4": "Our professional customs brokers ensure that all customs formalities are completed. We guarantee fast and correct cargo clearance, minimizing risks and ensuring compliance with all laws",
         "title5": "Training and retraining of foreign trade specialists",
         "text5": "We provide training and advice in the field of foreign economic activity (FEA), helping your specialists keep abreast of the latest changes in legislation and effectively manage customs processes",
-        "title6": "international trade",
-        "text6": "We help your business expand its boundaries through international trade. Our experience in global business and international partnerships helps you trade successfully and grow your business in the global marketplace"
+        "title6": "International trade",
+        "text6": "We are an active participant in international trade, importing and exporting goods. Our experience and deep knowledge of global markets enable us to effectively manage all aspects of international trade, from finding new markets to optimizing supplies and logistics."
     },
     "underCarousel": {
         "title_1_1": "Personal",
@@ -68,7 +68,7 @@
         "title_1": "your future is in our hands",
         "contacts": "Contacts",
         "address": "Address",
-        "address_map": "100099, Tashkent, Yunusabad district, st. Amira Temura, house 2",
+        "address_map": "100099, Tashkent, Yunusabad district, Amir Temur st. house 2",
         "telefon": "Phone",
         "email": "E-mail",
         "copy_right": "All rights reserved"

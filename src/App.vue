@@ -13,7 +13,7 @@ import arrow from "./components/arrow.vue";
 import BrandCarousel from "./components/BrandCarousel.vue";
 const { carouselData } = useHelper();
 const { locale, t } = useI18n();
-const currentItem = ref(1);
+const currentItem = ref(0);
 const count1 = ref(0);
 const count2 = ref(0);
 const count3 = ref(0);
@@ -37,7 +37,7 @@ onMounted(() => {
     } else {
       clearInterval(carouselInterval);
     }
-  }, 2500);
+  }, 4500);
 
   document.addEventListener("scroll", (event) => {
     if (window.pageYOffset > 2200) {
@@ -924,9 +924,11 @@ const showMap = ref(false);
         class="w-full py-8 flex xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col justify-between items-center relative"
       >
         <div class="w-[30%] text-[36px] flex items-center">
-          <logo
+          <a href="#">
+            <logo 
             class="xxl:scale-100 xl:scale-100 lg:scale-100 md:scale-100 slg:scale-100 scale-125"
           />
+          </a>
         </div>
         <div
           class="xxl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] slg:w-[70%] w-full flex justify-end items-center"
