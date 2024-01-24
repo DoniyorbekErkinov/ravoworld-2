@@ -28,11 +28,11 @@ export function useHelper() {
           title: "carousel.title5",
           text: "carousel.text5",
         },
-        {
-          img: "/img/c-img-6.jpg",
-          title: "carousel.title6",
-          text: "carousel.text6",
-        },
+        // {
+        //   img: "/img/c-img-6.jpg",
+        //   title: "carousel.title6",
+        //   text: "carousel.text6",
+        // },
     ]);
     
 

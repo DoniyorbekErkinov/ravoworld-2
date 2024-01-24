@@ -93,7 +93,9 @@ const showMap = ref(false);
         class="w-full py-8 px-2 sm_md:px-6 flex justify-between items-center"
       >
         <div class="flex items-center">
-          <logo class="text-xs md:text-2xl" />
+          <a href="/">
+            <logo class="text-xs md:text-2xl" />
+          </a>
         </div>
         <div class="flex justify-end items-center">
           <ul class="xxl:flex xl:flex lg:flex hidden justify-between gap-12">
