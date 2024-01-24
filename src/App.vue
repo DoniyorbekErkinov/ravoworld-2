@@ -485,7 +485,7 @@ const showMap = ref(false);
         class="w-full xxl:grid xl:grid lg:grid md:grid slg:grid flex flex-col grid-cols-3 gap-6 xxl:mt-[88px] xl:mt-[88px] lg:mt-[88px] md:mt-[88px] mt-12 xxl:px-0 xl:px-0 lg:px-0 md:px-0 slg:px-0 px-6"
       >
         <div
-          class="group hover:border-mRed border border-2Gray h-[366px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
+          class="group hover:border-mRed border border-2Gray h-[388px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
         >
           <div>
             <handGlobe class="group-hover:fill-mRed fill-mWhite" />
@@ -502,7 +502,7 @@ const showMap = ref(false);
           </div>
         </div>
         <div
-          class="group hover:border-mRed border border-2Gray h-[366px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
+          class="group hover:border-mRed border border-2Gray h-[388px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
         >
           <div>
             <svg
@@ -644,7 +644,7 @@ const showMap = ref(false);
           class="h-[300px] rounded-2xl xxl:flex xl:flex lg:flex md:flex hidden"
         ></div>
         <div
-          class="group hover:border-mRed border border-2Gray h-[366px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
+          class="group hover:border-mRed border border-2Gray h-[388px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
         >
           <div>
             <warning class="group-hover:fill-mRed fill-mWhite" />
@@ -661,7 +661,7 @@ const showMap = ref(false);
           </div>
         </div>
         <div
-          class="group hover:border-mRed border border-2Gray h-[366px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
+          class="group hover:border-mRed border border-2Gray h-[388px] rounded-2xl xxl:px-12 xl:px-12 lg:px-12 md:px-12 slg:px-12 p-8 xxl:py-10 xl:py-10 lg:py-10 md:py-10 slg:py-10 flex flex-col justify-between"
         >
           <div>
             <headphones class="group-hover:fill-mRed fill-mWhite" />

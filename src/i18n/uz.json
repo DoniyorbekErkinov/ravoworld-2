@@ -13,7 +13,7 @@
     },
     "header": {
         "title_1": "Tezkor",
-        "title_2": "chegarasiz ",
+        "title_2": " chegarasiz ",
         "title_3": "yetkazib berish",
         "text": "Kompaniyamiz – tez, samarali, muammosiz ekspress yuk tashish xizmatini taklif qiladi",
         "circle": "Aloqa"
@@ -37,14 +37,14 @@
         "text6": "Biz xalqaro savdo, tovarlarni import va eksport qilish bo'yicha faol ishtirokchimiz. Bizning tajribamiz va jahon bozorlari bo'yicha teran bilimimiz bizga xalqaro savdoning barcha jabhalarini, yangi bozorlarni topishdan tortib, yetkazib berish va logistikani optimallashtirishgacha samarali boshqarish imkonini beradi."
     },
     "underCarousel": {
-        "title_1_1": "Shaxsiy",
+        "title_1_1": "Individual",
         "title_1_2":"yondashuv",
         "title_2_1": "Global",
         "title_2_2":"na'tijalar",
         "card": {
             "title1": "Boshdan oyoq yetkazib berish xizmati bilan ta'minlaymiz",
             "text1": "Biz mijozlarga yuk tashish bilan bog'liq to'liq xizmatlar to'plamini taqdim etamiz. Shuningdek, biz konsultatsiya, sug'urta, qo'llab-quvvatlash va bojxona xizmatlarini ham taqdim etamiz.",
-            "title2": "Biz qulay shartlarni taklif qilamiz.",
+            "title2": "Biz qulay shartlarni taklif qilamiz",
             "text2": "Biz mijozlar uchun yuk tashish to'lovlari bo'yicha qulay individual shartlar taqdim etamiz. Har bir yetkazib berish yo'nalishini ko'rib chiqamiz va yuk hajmi hamda tashish muddatlariga muvofiq hisob-kitob tizimiga tuzatishlar kiritamiz.",
             "title3": "Xavf-xatarlaringizni minimallashtiramiz",
             "text3": "Biz normativ-huquqiy hujjatlarning talablariga muvofiq ishlashga ruxsat etilgan transport vositalaridan foydalanamiz. Bizda yuk tashish sohasida tegishli ko'nikma va tajribaga ega bo'lgan xodimlar faoliyat yuritadi.",
@@ -56,13 +56,13 @@
         "title_1_1": "Global ",
         "title_1_2": "yetkazib ",
         "title_2_1": "berish bo'yicha ",
-        "title_2_2": "ishonchli hamko.",
+        "title_2_2": "ishonchli hamkor.",
         "text":"{RavoWorld}'da biz faqatgina yuklarni yetkazib berishga emas, balki sizning muvaffaqiyatingiz uchun yo'l-yo'riq yaratishga intilamiz. Oddiylikdan tashqariga chiqing va biz bilan birga har bir yetkazib berishni muvaffaqiyat tarixiga aylantiring.",
         "card1": "hamkor davlatlar",
         "card2": "tashkil topgan yili",
         "card3": "mamnun mijozlar",
         "card4": "tashishlar amalga oshirildi"
-    },
+},
     "contact": {
         "title": "Biz tomon qadam tashlang: ",
         "title_1": "Biz bilan kelajakni yarating",
