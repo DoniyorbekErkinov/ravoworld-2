@@ -452,7 +452,7 @@ const showMap = ref(false);
       <div
         class="xxl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] slg:w-[70%] w-full mx-auto flex flex-col items-center"
       >
-        <div class="flex justify-end items-center w-full">
+        <div :class="locale == 'ru' ? 'scale-[0.85]' : ''" class="flex justify-end items-center w-full">
           <div
             class="xxl:w-[75%] xl:w-[75%] lg:w-[75%] md:w-[75%] slg:w-[75%] w-full flex xxl:justify-end xl:justify-end lg:justify-end md:justify-end slg:justify-end justify-center mx-auto"
           >
@@ -467,7 +467,7 @@ const showMap = ref(false);
             >
           </div>
         </div>
-        <div class="flex justify-start items-center w-full">
+        <div :class="locale == 'ru' ? 'scale-[0.85]' : ''" class="flex justify-start items-center w-full">
           <div
             class="xxl:w-[75%] xl:w-[75%] lg:w-[75%] md:w-[75%] slg:w-[75%] w-full flex xxl:justify-start xl:justify-start lg:justify-start md:justify-start slg:justify-start justify-center mx-auto"
           >
@@ -925,7 +925,7 @@ const showMap = ref(false);
       <div
         class="w-full py-8 flex xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col justify-between items-center relative"
       >
-        <div class="w-[30%] text-[36px] flex items-center">
+        <div class="md:w-[30%] w-full text-[36px] flex justify-center items-center">
           <a href="#">
             <logo 
             class="xxl:scale-100 xl:scale-100 lg:scale-100 md:scale-100 slg:scale-100 scale-125"
