@@ -65,19 +65,19 @@ html {
 
 @font-face {
   font-family: 'RF Dewi Light';
-  src: url('/fonts/RFDewiExpanded-Light.ttf') format('truetype'), 
+  src: url('/fonts/RFDewiExpanded-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'RF Dewi Regular';
-  src: url('/fonts/RFDewiExpanded-Regular.ttf') format('truetype'), 
+  src: url('/fonts/RFDewiExpanded-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'RF Dewi Semibold';
-  src: url('/fonts/RFDewiExpanded-Semibold.ttf') format('truetype'), 
+  src: url('/fonts/RFDewiExpanded-Semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
