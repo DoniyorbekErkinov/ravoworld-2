@@ -925,7 +925,7 @@ const showMap = ref(false);
       <div
         class="w-full py-8 flex xxl:flex-row xl:flex-row lg:flex-row md:flex-row slg:flex-row flex-col justify-between items-center relative"
       >
-        <div class="md:w-[30%] w-full text-[36px] flex justify-center items-center">
+        <div class="md:w-[30%] w-full text-[36px] flex md:justify-start justify-center items-center">
           <a href="#">
             <logo 
             class="xxl:scale-100 xl:scale-100 lg:scale-100 md:scale-100 slg:scale-100 scale-125"
